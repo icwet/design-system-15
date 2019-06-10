@@ -1,17 +1,134 @@
 .theme {
-  &_color_project-default {
+  background: var(--background-default);
+  color: var(--text-main);
 
+  &_color_project-default {
+    --background-default: #ffffff;
+    --background-accent: #0056B3;
+    --border: #000000;
+
+    --text-main: #000000;
+    --text-secondary: rgba(0, 0, 0, 0.6);
+    --text-additional: rgba(0, 0, 0, 0.3);
+    --text-links: #0070f0;
   }
 
   &_color_project-brand {
+    --background-default: #0070f0;
+    --background-accent: #FFFFFF;
+    --border: #FFFFFF;
 
+    --text-main: #FFFFFF;
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --text-additional: rgba(255, 255, 255, 0.3);
+    --text-links: #FFFFFF;
   }
 
   &_color_project-inverse {
+    --background-default: #000000;
+    --background-accent: #FFFFFF;
+    --border: #FFFFFF;
 
+    --text-main: #FFFFFF;
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --text-additional: rgba(255, 255, 255, 0.3);
+    --text-links: #0070f0;
   }
+  &_color_project-warning {
+    --background-default: #FF9900;
+    --background-accent: #FFFFFF;
+    --border: #FFFFFF;
 
+    --text-main: #FFFFFF;
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --text-additional: rgba(255, 255, 255, 0.3);
+    --text-links: #FFFFFF;
+  }
   &_color_megafon-brand {
+    --background-default: #1FA55D;
+    --background-accent: #FFFFFF;
+    --border: #FFFFFF;
 
+    --text-main: #FFFFFF;
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --text-additional: rgba(255, 255, 255, 0.3);
+    --text-links: #FFFFFF;
+  }
+  &_size_default {
+    --size-s: 7px;
+    --size-m: 8px;
+    --size-l: 10px;
+    --size-xl: 11px;
+    --size-xxl: 13px;
+
+    --lh-s: 18px;
+    --lh-m: 21px;
+    --lh-l: 25px;
+    --lh-xl: 28px;
+    --lh-xxl: 34px;
+  }
+  &_space_default {
+    --gap-xxxs: 2px;
+    --gap-xxs: 4px;
+    --gap-xs: 8px;
+    --gap-s: 12px;
+    --gap-m: 16px;
+    --gap-l: 20px;
+    --gap-xl: 24px;
+    --gap-xxl: 32px;
+    --gap-xxxl: 40px;
+    --gap-xxxxl: 48px;
+  }
+  &_breakpoint_default {
+    @media screen and (max-width: 1144px) {
+      display: grid;
+      grid-auto-flow: row;
+    }
+  }
+  &_gap_small {
+    --gap: calc(var(--gap-xxxl) / 2);
+    @media screen and (max-width: 1144px) {
+      --gap: calc(var(--gap-m) / 2);
+    }
   }
 }
+.layout {
+  .container {
+    &_align_center {
+      justify-self: center;
+    }
+    &_size_s {
+      max-width: 880px;
+    }
+    &_size_m {
+      max-width: 1144px;
+    }
+  }
+  .grid {
+    &_xs-columns_3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &_s-columns_3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &_s-columns_6 {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    &_m-columns_12 {
+      grid-template-columns: repeat(12, 1fr);
+    }
+    &_m-columns_10 {
+      grid-template-columns: repeat(10, 1fr);
+    }
+    &_col-gap_two-thirds {
+      // FIXME
+    }
+    &_col-gap_full {
+      // FIXME
+    }
+    &__fraction {
+
+    }
+  }
+}
+
