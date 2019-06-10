@@ -1,13 +1,14 @@
+// prettier-ignore
 const path = require("path");
 
 module.exports = {
   entry: {
     script: "./src/script.js",
-    "template-engine": "./template-engine.js"
+    "template-engine": "./src/template-engine.js"
   },
   output: {
     filename: "[name].js",
-    path: __dirname + "dist"
+    path: path.resolve(__dirname, "build")
   },
   module: {
     rules: [
@@ -23,21 +24,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader",
-            options: {
-              importLoaders: 1
-            }
-          },
-          {
-            loader: "postcss-loader"
-          }
-        ]
+        use: ["style-loader", { loader: "css-loader", options: { importLoaders: 1 } }, "postcss-loader"]
       }
     ]
   }
