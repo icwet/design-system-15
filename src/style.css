@@ -121,10 +121,8 @@
       grid-template-columns: repeat(10, 1fr);
     }
     &_col-gap_two-thirds {
-      // FIXME
     }
     &_col-gap_full {
-      // FIXME
     }
     &__fraction {
 

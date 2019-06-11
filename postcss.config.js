@@ -1,8 +1,8 @@
-// prettier-ignore
 module.exports = {
   plugins: {
     "postcss-import": {},
-    "postcss-preset-env": {},
-    "cssnano": {}
+    "postcss-nested": {},
+    cssnano: {},
+    autoprefixer: {}
   }
 };

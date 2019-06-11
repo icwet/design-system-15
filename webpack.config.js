@@ -1,13 +1,14 @@
-// prettier-ignore
 const path = require("path");
+const devMode = process.env.NODE_ENV !== "production";
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    script: "./src/script.js",
-    "template-engine": "./src/template-engine.js"
+    "template-engine": "./src/template-engine.js",
+    script: "./src/script.js"
   },
-  devtool: "inline-source-map",
+  devtool: "source-map",
   devServer: {
     contentBase: "./build"
   },
@@ -18,20 +19,24 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
+        test: /\.css$/,
         use: [
-          { loader: MiniCssExtractPlugin.loader },
-          { loader: "style-loader" },
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: process.env.NODE_ENV === "development"
+            }
+          },
           { loader: "css-loader", options: { importLoaders: 1 } },
-          { loader: "postcss-loader" }
+          "postcss-loader"
         ]
       }
     ]
   },
   plugins: [
+    new HtmlWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
+      filename: devMode ? "style.css" : "style.[hash].css"
     })
   ]
 };
