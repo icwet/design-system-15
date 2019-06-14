@@ -1,30 +1,41 @@
-const path = require("path");
-const devMode = process.env.NODE_ENV !== "production";
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const StyleLintPlugin = require("stylelint-webpack-plugin");
+const path = require('path');
+const devMode = process.env.NODE_ENV !== 'production';
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   entry: {
-    "template-engine": "./src/template-engine.js",
-    script: "./src/script.js"
+    'template-engine': './src/template-engine.js',
+    script: './src/script.js'
   },
-  devtool: "source-map",
+  devtool: 'source-map',
   devServer: {
-    contentBase: "./build"
+    contentBase: './build'
   },
   output: {
-    filename: "[name].js",
-    path: path.resolve(__dirname, "build")
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'build')
   },
   module: {
     rules: [
       {
+        enforce: 'pre',
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "eslint-loader",
+        loader: 'eslint-loader',
         options: {
           // eslint options (if necessary)
+        }
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
         }
       },
       {
@@ -33,11 +44,11 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              hmr: process.env.NODE_ENV === "development"
+              hmr: process.env.NODE_ENV === 'development'
             }
           },
-          { loader: "css-loader", options: { importLoaders: 1 } },
-          "postcss-loader"
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          'postcss-loader'
         ]
       }
     ]
@@ -45,10 +56,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: devMode ? "style.css" : "style.[hash].css"
+      filename: devMode ? 'style.css' : 'style.[hash].css'
     }),
     new StyleLintPlugin({
-      files: "src/**/*.css"
+      files: 'src/**/*.css'
     })
   ]
 };
