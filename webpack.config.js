@@ -2,6 +2,7 @@ const path = require("path");
 const devMode = process.env.NODE_ENV !== "production";
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const StyleLintPlugin = require("stylelint-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -45,6 +46,9 @@ module.exports = {
     new HtmlWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: devMode ? "style.css" : "style.[hash].css"
+    }),
+    new StyleLintPlugin({
+      files: "src/**/*.css"
     })
   ]
 };

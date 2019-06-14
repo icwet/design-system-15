@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 body {
@@ -11,7 +13,7 @@ body {
 
   &_color_project-default {
     --background-default: #ffffff;
-    --background-accent: #0056B3;
+    --background-accent: #0056b3;
     --border: #000000;
 
     --text-main: #000000;
@@ -22,44 +24,44 @@ body {
 
   &_color_project-brand {
     --background-default: #0070f0;
-    --background-accent: #FFFFFF;
-    --border: #FFFFFF;
+    --background-accent: #ffffff;
+    --border: #ffffff;
 
-    --text-main: #FFFFFF;
+    --text-main: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.6);
     --text-additional: rgba(255, 255, 255, 0.3);
-    --text-links: #FFFFFF;
+    --text-links: #ffffff;
   }
 
   &_color_project-inverse {
     --background-default: #000000;
-    --background-accent: #FFFFFF;
-    --border: #FFFFFF;
+    --background-accent: #ffffff;
+    --border: #ffffff;
 
-    --text-main: #FFFFFF;
+    --text-main: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.6);
     --text-additional: rgba(255, 255, 255, 0.3);
     --text-links: #0070f0;
   }
   &_color_project-warning {
-    --background-default: #FF9900;
-    --background-accent: #FFFFFF;
-    --border: #FFFFFF;
+    --background-default: #ff9900;
+    --background-accent: #ffffff;
+    --border: #ffffff;
 
-    --text-main: #FFFFFF;
+    --text-main: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.6);
     --text-additional: rgba(255, 255, 255, 0.3);
-    --text-links: #FFFFFF;
+    --text-links: #ffffff;
   }
   &_color_megafon-brand {
-    --background-default: #1FA55D;
-    --background-accent: #FFFFFF;
-    --border: #FFFFFF;
+    --background-default: #1fa55d;
+    --background-accent: #ffffff;
+    --border: #ffffff;
 
-    --text-main: #FFFFFF;
+    --text-main: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.6);
     --text-additional: rgba(255, 255, 255, 0.3);
-    --text-links: #FFFFFF;
+    --text-links: #ffffff;
   }
   &_size_default {
     --size-s: 7px;
@@ -99,9 +101,6 @@ body {
     }
   }
 }
-.layout {
-
-}
 .layout__container {
   &_align_center {
     justify-items: center;
@@ -118,19 +117,15 @@ body {
   display: grid;
   &_xs-columns_3 {
     grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
-
   }
   &_s-columns_3 {
     grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
-
   }
   &_s-columns_6 {
     grid-template-columns: repeat(auto-fit, minmax(17%, 1fr));
-
   }
   &_m-columns_12 {
     grid-template-columns: repeat(auto-fit, minmax(8%, 1fr));
-
   }
   &_m-columns_10 {
     grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
@@ -139,13 +134,13 @@ body {
     column-gap: 66%;
   }
   &_col-gap_full {
-    column-gap: 100%
+    column-gap: 100%;
   }
   &_row-gap_half {
-    row-gap: 50%
+    row-gap: 50%;
   }
   &_row-gap_half {
-    row-gap: 100%
+    row-gap: 100%;
   }
 }
 .grid__fraction {
@@ -162,10 +157,8 @@ body {
     background: orange;
   }
   &_m-col_5 {
-
   }
   &_m-col_8 {
-
   }
 }
 .card {
@@ -210,13 +203,10 @@ body {
     justify-items: right;
   }
   &_vertical-align_center {
-
   }
   &_vertical-align_top {
-
   }
   &_vertical-align_bottom {
-
   }
   &_space-a_m {
     padding: var(--gap-m);
