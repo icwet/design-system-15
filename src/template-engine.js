@@ -2,28 +2,36 @@
  * @param  {object} obj — Структура блоков интерфейса в формате BEMJSON
  * @return {string} HTML разметка страницы
  */
-
-export default function bemjson(obj) {
-  const escapeChars = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' };
-  const badChars = /[&<>"]/g;
-  const possible = /[&<>"]/;
-
-  const JS_ATTR_NAME = 'onclick';
+export default function bemEngine(obj) {
   const DEFAULT_TAG = 'div';
 
-  const escapeChar = function(char) {
-    return escapeMap[char];
-  };
+  function bemClasses(obj, ctxBlock) {
+    const block = obj.block || ctxBlock;
+    const base = block + (obj.elem ? '__' + obj.elem : '');
+    const mods = obj.elem ? obj.elemMods : obj.mods;
 
-  const escape = function(string) {
-    if (!possible.test(string)) {
-      return string;
+    let output = base === ctxBlock ? '' : base;
+    if (mods) {
+      for (let i in mods) {
+        output += ' ' + base + '_' + i + (mods[i] === true ? '' : '_' + mods[i]);
+      }
     }
-    return string.replace(badChars, escapeChar);
-  };
 
-  const bemClasses = function(bemjson, userArgs) {
-    let block = bemjson.block || userArgs;
-    let element = block + bemjson.elem;
-  };
+    if (obj.mix) {
+      for (let i = 0; i < obj.mix.length; i++) {
+        let mix = obj.mix[i];
+        if (!mix) {
+          continue;
+        }
+        output += ' ' + bemClasses(mix, block);
+      }
+    }
+    return output;
+  }
+  obj.tag = obj.tag || DEFAULT_TAG;
+
+  // let bemClass = (obj.block) ? block;
+  let res = '<' + obj.tag + ' class="';
+
+  return res + '>' + this.bemEngine(obj.content) + '</' + obj.tag + '>';
 }
