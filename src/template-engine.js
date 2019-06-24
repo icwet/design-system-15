@@ -2,12 +2,12 @@
  * @param  {object} obj — Структура блоков интерфейса в формате BEMJSON
  * @return {string} HTML разметка страницы
  */
-export default function bemEngine(obj) {
+
+export default function(obj) {
   function bemClass(obj, argBlock) {
     const block = obj.block || argBlock;
     const base = block + (obj.elem ? '__' + obj.elem : '');
     const mods = obj.elem ? obj.elemMods : obj.mods;
-
     let output = base === argBlock ? '' : base;
 
     if (mods) {
@@ -32,13 +32,11 @@ export default function bemEngine(obj) {
     if (ctxBlock && obj.elem && !obj.block) {
       obj.block = ctxBlock;
     }
-
     let resultClass = obj.block || ctxBlock ? bemClass(obj) : '';
 
     if (typeof obj !== 'object') {
       return obj;
     }
-
     if (obj === undefined || obj === null || obj === false) {
       return '';
     }

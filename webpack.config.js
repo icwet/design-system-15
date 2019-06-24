@@ -45,6 +45,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      filename: 'content-blocks.html',
+      template: './content-blocks.html'
+    }),
     new MiniCssExtractPlugin({
       filename: devMode ? 'style.css' : 'style.[hash].css'
     }),

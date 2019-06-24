@@ -9,7 +9,9 @@ body {
   padding: 0;
 }
 
+/* Слой темы */
 .theme {
+  display: grid;
   background: var(--background-default);
   color: var(--text-main);
 
@@ -89,12 +91,7 @@ body {
     --gap-xxl: 32px;
     --gap-xxxl: 40px;
     --gap-xxxxl: 48px;
-  }
-  &_breakpoint_default {
-    @media screen and (max-width: 1144px) {
-      display: grid;
-      grid-auto-flow: row;
-    }
+    --gap-xxxxxl: 72px;
   }
   &_gap_small {
     --gap: calc(var(--gap-xxxl) / 2);
@@ -102,8 +99,13 @@ body {
       --gap: calc(var(--gap-m) / 2);
     }
   }
+
+  @media screen and (max-width: 1144px) {
+    grid-auto-flow: row;
+  }
 }
 
+/* Слой каркаса */
 .layout__container {
   &_align_center {
     justify-items: center;
@@ -167,6 +169,7 @@ body {
   }
 }
 
+/* Слой паттернов */
 .card {
   position: relative;
   display: grid;
@@ -469,23 +472,54 @@ body {
   }
 }
 
+/* Слой контентных блоков */
 .text {
   &_align_center {
     text-align: center;
   }
   &_size_s {
+    --elemsWidthS: 20px;
+    --elemsWidthM: 48px;
+    --elemsWidthL: 100px;
+
+    --elemsHeight: 7px;
+
     font-size: var(--size-s);
   }
   &_size_m {
+    --elemsWidthS: 24px;
+    --elemsWidthM: 56px;
+    --elemsWidthL: 114px;
+
+    --elemsHeight: 8px;
+
     font-size: var(--size-m);
   }
   &_size_l {
+    --elemsWidthS: 28px;
+    --elemsWidthM: 68px;
+    --elemsWidthL: 138px;
+
+    --elemsHeight: 10px;
+
     font-size: var(--size-l);
   }
   &_size_xl {
+    --elemsWidthS: 32px;
+    --elemsWidthM: 74px;
+    --elemsWidthL: 15px;
+
+    --elemsHeight: 11px;
+
     font-size: var(--size-xl);
   }
   &_size_xll {
+    --elemsWidthS: 36px;
+    --elemsWidthM: 88px;
+    --elemsWidthL: 184px;
+
+    --elemsHeight: 13px;
+
     font-size: var(--size-xll);
   }
 
@@ -517,10 +551,141 @@ body {
 }
 
 .text__word {
+  height: var(--elemsHeight);
+
   &_width_s {
-    width: var(--size);
+    width: var(--elemsWidthS);
   }
-  &_width_ {
-    width: 20px;
+  &_width_m {
+    width: var(--elemsWidthM);
   }
+  &_width_l {
+    width: var(--elemsWidthL);
+  }
+}
+
+.avatar {
+  background: var(--text-main);
+
+  &_size_m {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.brand-logo {
+  &_name_yota {
+    background: #00c0f8;
+  }
+  &_name_megafon {
+    background: #33c778;
+  }
+  &_name_kcell {
+    background: #692b96;
+  }
+  &_name_mts {
+    background: #f70000;
+  }
+
+  &_size_xxs {
+    width: 24px;
+    height: 24px;
+  }
+  &_size_xs {
+    width: 32px;
+    height: 32px;
+  }
+  &_size_s {
+    width: 40px;
+    height: 40px;
+  }
+  &_size_m {
+    width: 60px;
+    height: 60px;
+  }
+  &_size_l {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.placeholder {
+  &_size_m {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.button {
+  background: var(--background-accent);
+
+  &_size_s {
+    height: 24px;
+  }
+  &_size_m {
+    height: 32px;
+  }
+  &_size_l {
+    height: 42px;
+  }
+  &_size_xl {
+    height: 56px;
+  }
+  &_size_xxl {
+    height: 64px;
+  }
+
+  &_width_full {
+    width: 200px;
+  }
+}
+
+.input {
+  width: 100%;
+
+  &_size_s {
+    height: 24px;
+  }
+  &_size_m {
+    height: 32px;
+  }
+  &_size_l {
+    height: 42px;
+  }
+  &_size_xl {
+    height: 56px;
+  }
+  &_size_xxl {
+    height: 64px;
+  }
+}
+
+.image {
+  width: 100%;
+  height: var(--currentImageHeight);
+}
+
+.accordeon {
+}
+
+/* Контентные блоки */
+.payment {
+  border: 1px solid var(--border);
+}
+.warning {
+  min-height: 335px;
+  margin: var(--gap-m) 0;
+}
+.product {
+  --currentImageHeight: 160px;
+
+  min-height: 280px;
+  border: 3px solid var(--border);
+}
+.history {
+  border: 3px solid var(--border);
+}
+.commercial {
+  min-height: 430px;
+  border: 3px solid var(--border);
 }
