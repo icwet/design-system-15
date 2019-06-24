@@ -1,12 +1,12 @@
 import styles from './style.css';
 import bemEngine from './template-engine';
 
-const body = document.getElementById('app');
 const markup = bemEngine({
   block: 'my-block',
-  mix: [
-    { block: 'other-block', mods: { 'mod-name': 'mod-value' } },
-    { block: 'other-block', elem: 'second-elem', elemMods: { 'elem-mod-name': 'elem-mod-value' } }
-  ]
+  mix: [{ block: 'my-block', mods: { 'mod-name': 'mod-value' } }],
+  content: {
+    block: 'my-block',
+    elem: 'my-block-element'
+  }
 });
-body.innerHTML += '123';
+document.body.innerHTML += markup;

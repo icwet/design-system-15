@@ -3,13 +3,12 @@
  * @return {string} HTML разметка страницы
  */
 export default function bemEngine(obj) {
-
   function bemClass(obj, argBlock) {
     const block = obj.block || argBlock;
     const base = block + (obj.elem ? '__' + obj.elem : '');
     const mods = obj.elem ? obj.elemMods : obj.mods;
 
-    let output = (base === ctxBlock) ? '' : base;
+    let output = base === argBlock ? '' : base;
 
     if (mods) {
       for (let i in mods) {
@@ -30,12 +29,11 @@ export default function bemEngine(obj) {
   }
 
   function outputClasses(obj, ctxBlock) {
-
     if (ctxBlock && obj.elem && !obj.block) {
       obj.block = ctxBlock;
     }
 
-    let resultClass = (obj.block || ctxBlock) ? bemClass(obj) : '';
+    let resultClass = obj.block || ctxBlock ? bemClass(obj) : '';
 
     if (typeof obj !== 'object') {
       return obj;
@@ -46,9 +44,13 @@ export default function bemEngine(obj) {
     }
     return ' class="' + resultClass + '"';
   }
-  
+
   function toHTML(obj, ctxBlock) {
     const DEFAULT_TAG = 'div';
+
+    if (obj === undefined || obj === false || obj === null) {
+      return '';
+    }
 
     if (obj.block) {
       ctxBlock = obj.block;
@@ -56,10 +58,9 @@ export default function bemEngine(obj) {
 
     obj.tag = obj.tag || DEFAULT_TAG;
 
-    const result = `< + ${obj.tag} + ${outputClasses(obj, ctxBlock)}`;
+    const result = '<' + obj.tag + outputClasses(obj, ctxBlock);
 
-    return result + '>' + toHTML(obj, ctxBlock) + '</' + obj.tag + '>';
+    return result + '>' + toHTML(obj.content, ctxBlock) + '</' + obj.tag + '>';
   }
-
   return toHTML(obj);
 }
