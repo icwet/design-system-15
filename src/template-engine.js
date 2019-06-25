@@ -8,6 +8,7 @@ export default function(obj) {
     const block = obj.block || argBlock;
     const base = block + (obj.elem ? '__' + obj.elem : '');
     const mods = obj.elem ? obj.elemMods : obj.mods;
+
     let output = base === argBlock ? '' : base;
 
     if (mods) {
@@ -17,6 +18,9 @@ export default function(obj) {
     }
 
     if (obj.mix) {
+      if (!Array.isArray(obj.mix)) {
+        obj.mix = [obj.mix];
+      }
       for (let i = 0; i < obj.mix.length; i++) {
         let mix = obj.mix[i];
         if (!mix) {
@@ -32,6 +36,7 @@ export default function(obj) {
     if (ctxBlock && obj.elem && !obj.block) {
       obj.block = ctxBlock;
     }
+
     let resultClass = obj.block || ctxBlock ? bemClass(obj) : '';
 
     if (typeof obj !== 'object') {
@@ -43,22 +48,34 @@ export default function(obj) {
     return ' class="' + resultClass + '"';
   }
 
+  function concatArray(array, ctxBlock) {
+    let output = '';
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] !== undefined && array[i] !== false && array[i] !== null) {
+        output += toHTML(array[i], ctxBlock);
+      }
+    }
+    return output;
+  }
+
   function toHTML(obj, ctxBlock) {
     const DEFAULT_TAG = 'div';
 
     if (obj === undefined || obj === false || obj === null) {
       return '';
     }
-
     if (obj.block) {
       ctxBlock = obj.block;
+    }
+    if (Array.isArray(obj)) {
+      return concatArray(obj, ctxBlock);
     }
 
     obj.tag = obj.tag || DEFAULT_TAG;
 
     const result = '<' + obj.tag + outputClasses(obj, ctxBlock);
-
     return result + '>' + toHTML(obj.content, ctxBlock) + '</' + obj.tag + '>';
   }
+
   return toHTML(obj);
 }
