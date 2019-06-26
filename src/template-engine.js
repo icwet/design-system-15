@@ -4,6 +4,22 @@
  */
 
 export default function(obj) {
+  function outputClasses(obj, ctxBlock) {
+    if (ctxBlock && obj.elem && !obj.block) {
+      obj.block = ctxBlock;
+    }
+
+    let resultClass = obj.block || ctxBlock ? bemClass(obj) : '';
+
+    if (typeof obj !== 'object') {
+      return obj;
+    }
+    if (obj === undefined || obj === null || obj === false) {
+      return '';
+    }
+    return ' class="' + resultClass + '"';
+  }
+
   function bemClass(obj, argBlock) {
     const block = obj.block || argBlock;
     const base = block + (obj.elem ? '__' + obj.elem : '');
@@ -32,20 +48,21 @@ export default function(obj) {
     return output;
   }
 
-  function outputClasses(obj, ctxBlock) {
-    if (ctxBlock && obj.elem && !obj.block) {
-      obj.block = ctxBlock;
-    }
-
-    let resultClass = obj.block || ctxBlock ? bemClass(obj) : '';
-
-    if (typeof obj !== 'object') {
-      return obj;
-    }
-    if (obj === undefined || obj === null || obj === false) {
+  function toHTML(obj, ctxBlock) {
+    if (obj === undefined || obj === false || obj === null) {
       return '';
     }
-    return ' class="' + resultClass + '"';
+    if (obj.block) {
+      ctxBlock = obj.block;
+    }
+    if (Array.isArray(obj)) {
+      return concatArray(obj, ctxBlock);
+    }
+    const DEFAULT_TAG = 'div';
+    obj.tag = obj.tag || DEFAULT_TAG;
+
+    const result = '<' + obj.tag + outputClasses(obj, ctxBlock);
+    return result + '>' + toHTML(obj.content, ctxBlock) + '</' + obj.tag + '>';
   }
 
   function concatArray(array, ctxBlock) {
@@ -57,25 +74,5 @@ export default function(obj) {
     }
     return output;
   }
-
-  function toHTML(obj, ctxBlock) {
-    const DEFAULT_TAG = 'div';
-
-    if (obj === undefined || obj === false || obj === null) {
-      return '';
-    }
-    if (obj.block) {
-      ctxBlock = obj.block;
-    }
-    if (Array.isArray(obj)) {
-      return concatArray(obj, ctxBlock);
-    }
-
-    obj.tag = obj.tag || DEFAULT_TAG;
-
-    const result = '<' + obj.tag + outputClasses(obj, ctxBlock);
-    return result + '>' + toHTML(obj.content, ctxBlock) + '</' + obj.tag + '>';
-  }
-
   return toHTML(obj);
 }
