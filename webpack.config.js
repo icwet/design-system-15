@@ -40,6 +40,17 @@ module.exports = {
           { loader: 'css-loader', options: { importLoaders: 1 } },
           'postcss-loader'
         ]
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
       }
     ]
   },

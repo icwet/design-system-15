@@ -24,7 +24,7 @@ body {
     --text-additional: rgba(0, 0, 0, 0.3);
     --text-links: #0070f0;
 
-    --current-image: url('../res/img/image-placeholder-primary.svg') center/contain no-repeat;
+    --current-image: url('../res/img/image-placeholder-primary.svg') center/80px 65px no-repeat;
     --current-image-background: var(--text-main);
   }
 
@@ -49,7 +49,7 @@ body {
     --text-additional: rgba(255, 255, 255, 0.3);
     --text-links: #0070f0;
 
-    --current-image: url('../res/img/image-placeholder-inverse.svg') center/contain no-repeat;
+    --current-image: url('../res/img/image-placeholder-inverse.svg') center/80px 65px no-repeat;
     --current-image-background: var(--text-main);
   }
 
