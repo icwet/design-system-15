@@ -473,9 +473,6 @@ body {
 }
 
 .list__item {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
   &_border_bottom {
     border-bottom: 3px solid var(--border);
   }
@@ -793,6 +790,16 @@ body {
 
 .history {
   border: 3px solid var(--border);
+}
+.history__show {
+  display: grid;
+}
+.history__details {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.history__time {
 }
 
 .commercial {
