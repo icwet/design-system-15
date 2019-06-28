@@ -797,9 +797,21 @@ body {
 .history__details {
   display: grid;
   grid-auto-flow: column;
-  align-items: center;
+  grid-template-columns: 68px auto;
 }
 .history__time {
+  display: grid;
+  align-items: center;
+  height: 100%;
+  padding: 14px 0;
+}
+.history__destination {
+  display: grid;
+  grid-auto-flow: column;
+}
+.history__label {
+  display: grid;
+  grid-auto-flow: column;
 }
 
 .commercial {
