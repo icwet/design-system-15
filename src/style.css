@@ -23,6 +23,9 @@ body {
     --text-secondary: rgba(0, 0, 0, 0.6);
     --text-additional: rgba(0, 0, 0, 0.3);
     --text-links: #0070f0;
+
+    --current-image: url('../res/img/image-placeholder-primary.svg') center/contain no-repeat;
+    --current-image-background: var(--text-main);
   }
 
   &_color_project-brand {
@@ -45,6 +48,9 @@ body {
     --text-secondary: rgba(255, 255, 255, 0.6);
     --text-additional: rgba(255, 255, 255, 0.3);
     --text-links: #0070f0;
+
+    --current-image: url('../res/img/image-placeholder-inverse.svg') center/contain no-repeat;
+    --current-image-background: var(--text-main);
   }
 
   &_color_project-warning {
@@ -234,6 +240,7 @@ body {
   position: absolute;
   bottom: 0;
   display: grid;
+  width: 100%;
   &_distribute_between {
     justify-items: stretch;
   }
@@ -745,6 +752,7 @@ body {
 .image {
   width: 100%;
   height: var(--currentImageHeight);
+  background: var(--current-image-background) var(--current-image);
 }
 
 .accordeon {
@@ -761,7 +769,19 @@ body {
 }
 
 .warning {
+  display: grid;
+  grid-template-rows: 1fr min-content;
   min-height: 335px;
+}
+.warning__content {
+  align-self: start;
+}
+.warning__button-wrapper {
+  align-items: center;
+}
+.warning__placeholder {
+  margin-top: var(--gap-m);
+  margin-bottom: var(--gap-m);
 }
 
 .product {

@@ -196,10 +196,109 @@ const payment = bemEngine({
                     content: [
                       {
                         block: 'placeholder',
-                        mods: { size: 'm' }
+                        mods: { size: 'm' },
+                        mix: [
+                          {
+                            block: 'warning',
+                            elem: 'placeholder'
+                          }
+                        ]
                       },
                       {
-                        block: 'text'
+                        block: 'text',
+                        mods: { size: 'xl', view: 'primary', type: 'h1' },
+                        content: [
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: { width: 's' }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: { width: 'l' }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: { width: 'm' }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: { width: 'm' }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: { width: 's' }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: { width: 'm' }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: { width: 'l' }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 's'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 'm'
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        block: 'text',
+                        mods: { size: 'xl', view: 'primary' },
+                        content: [
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 's'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 'l'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 'm'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 'm'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 's'
+                            }
+                          }
+                        ]
                       }
                     ]
                   },
@@ -211,6 +310,64 @@ const payment = bemEngine({
                         block: 'informer',
                         elem: 'action',
                         elemMods: { distribute: 'center', 'space-a': 'xl' }
+                      }
+                    ],
+                    content: [
+                      {
+                        block: 'button',
+                        mods: { size: 'l', width: 'full' }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            block: 'grid',
+            elem: 'fraction',
+            elemMods: { 'm-col': '3' },
+            content: [
+              {
+                block: 'product',
+                mix: [
+                  {
+                    block: 'card',
+                    mods: {
+                      view: 'default',
+                      border: 'all'
+                    }
+                  }
+                ],
+                content: [
+                  {
+                    block: 'product',
+                    elem: 'content',
+                    mix: [
+                      {
+                        block: 'card',
+                        elem: 'content',
+                        elemMods: {
+                          'space-a': 'm'
+                        }
+                      }
+                    ],
+                    content: [
+                      {
+                        block: 'image'
+                      }
+                    ]
+                  },
+                  {
+                    block: 'product',
+                    elem: 'footer',
+                    mix: [
+                      {
+                        block: 'card',
+                        elem: 'footer',
+                        elemMods: {
+                          'space-a': 'm'
+                        }
                       }
                     ]
                   }
