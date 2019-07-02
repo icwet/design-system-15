@@ -37,6 +37,8 @@ body {
     --text-secondary: rgba(255, 255, 255, 0.6);
     --text-additional: rgba(255, 255, 255, 0.3);
     --text-links: #ffffff;
+
+    --current-image-background: transparent;
   }
 
   &_color_project-inverse {
@@ -217,6 +219,7 @@ body {
 
 /* Слой паттернов */
 .card {
+  position: relative;
   &_border_all {
     border-color: var(--border);
   }
@@ -566,8 +569,8 @@ body {
 
 /* Слой контентных блоков */
 .text {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  flex-wrap: wrap;
   &_align_center {
     justify-self: center;
   }
@@ -770,6 +773,7 @@ body {
   width: 100%;
   height: var(--currentImageHeight);
   background: var(--current-image-background) var(--current-image);
+  border: 3px solid var(--text-main);
 }
 
 .accordeon {
@@ -877,7 +881,69 @@ body {
   justify-content: space-between;
   padding-top: var(--gap-m);
 }
+
 .commercial {
   min-height: 430px;
   border: 3px solid var(--border);
+}
+
+.commercial__pic {
+  --currentImageHeight: 180px;
+}
+.commercial__info {
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+.navigation {
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+  grid-auto-flow: column;
+  gap: var(--gap-xs);
+  padding-top: var(--gap-s);
+}
+
+.page-button {
+  width: var(--size-m);
+  height: var(--size-m);
+  background: var(--text-main);
+}
+
+.cover {
+  --currentImageHeight: 180px;
+
+  min-height: 408px;
+}
+.cover__info {
+  display: grid;
+  gap: var(--gap-m);
+  grid-auto-rows: min-content;
+}
+.cover__preview {
+  display: grid;
+  gap: 12px;
+}
+
+.collect {
+  display: grid;
+  grid-auto-rows: min-content;
+  border: 3px solid var(--border);
+  min-height: 380px;
+
+  --currentImageHeight: 160px;
+}
+.collect__progress {
+  height: var(--size-xl);
+  background: var(--background-default);
+  border-bottom: 3px solid #fff;
+}
+.collect__done {
+  width: 75%;
+  height: 100%;
+  background: #007bff;
+}
+.collect__footer {
+  display: grid;
+  gap: var(--gap-s);
 }
