@@ -533,6 +533,7 @@ body {
 
 .icon-plus {
   display: grid;
+  grid-auto-flow: column;
   &_vertical-align_center {
     align-items: center;
   }
@@ -581,6 +582,7 @@ body {
     --elemsWidthL: 100px;
 
     --elemsHeight: 7px;
+    --lineHeight: var(--lh-s)
   }
 
   &_size_m {
@@ -589,6 +591,7 @@ body {
     --elemsWidthL: 114px;
 
     --elemsHeight: 8px;
+    --lineHeight: var(--lh-m)
   }
 
   &_size_l {
@@ -597,6 +600,7 @@ body {
     --elemsWidthL: 138px;
 
     --elemsHeight: 10px;
+    --lineHeight: var(--lh-l)
   }
 
   &_size_xl {
@@ -605,6 +609,7 @@ body {
     --elemsWidthL: 15px;
 
     --elemsHeight: 11px;
+    --lineHeight: var(--lh-xl)
   }
 
   &_size_xxl {
@@ -613,6 +618,7 @@ body {
     --elemsWidthL: 184px;
 
     --elemsHeight: 13px;
+    --lineHeight: var(--lh-xxl)
   }
 
   &_type_h1 {
@@ -651,6 +657,7 @@ body {
 .text__word {
   background: var(--text-view);
   height: var(--elemsHeight);
+  margin-top: var(--lineHeight);
 
   &_width_s {
     width: var(--elemsWidthS);
@@ -774,9 +781,8 @@ body {
   height: var(--currentImageHeight);
   background: var(--current-image-background) var(--current-image);
   border: 3px solid var(--text-main);
-}
 
-.accordeon {
+  min-width: var(--specialWidthVar)
 }
 
 /* Контентные блоки */
@@ -946,4 +952,14 @@ body {
 .collect__footer {
   display: grid;
   gap: var(--gap-s);
+}
+
+.articles {
+  --specialWidthVar: 170px;
+  --currentImageHeight: 120px;
+}
+.articles__content {
+  .text:last-child {
+    margin-top: var(--gap-xs);
+  }
 }
