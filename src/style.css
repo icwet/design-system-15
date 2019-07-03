@@ -582,7 +582,6 @@ body {
     --elemsWidthL: 100px;
 
     --elemsHeight: 7px;
-    --lineHeight: var(--lh-s)
   }
 
   &_size_m {
@@ -591,7 +590,6 @@ body {
     --elemsWidthL: 114px;
 
     --elemsHeight: 8px;
-    --lineHeight: var(--lh-m)
   }
 
   &_size_l {
@@ -600,7 +598,6 @@ body {
     --elemsWidthL: 138px;
 
     --elemsHeight: 10px;
-    --lineHeight: var(--lh-l)
   }
 
   &_size_xl {
@@ -609,7 +606,6 @@ body {
     --elemsWidthL: 15px;
 
     --elemsHeight: 11px;
-    --lineHeight: var(--lh-xl)
   }
 
   &_size_xxl {
@@ -618,7 +614,6 @@ body {
     --elemsWidthL: 184px;
 
     --elemsHeight: 13px;
-    --lineHeight: var(--lh-xxl)
   }
 
   &_type_h1 {
@@ -657,7 +652,6 @@ body {
 .text__word {
   background: var(--text-view);
   height: var(--elemsHeight);
-  margin-top: var(--lineHeight);
 
   &_width_s {
     width: var(--elemsWidthS);
@@ -782,7 +776,7 @@ body {
   background: var(--current-image-background) var(--current-image);
   border: 3px solid var(--text-main);
 
-  min-width: var(--specialWidthVar)
+  min-width: var(--specialWidthVar);
 }
 
 /* Контентные блоки */
@@ -958,8 +952,11 @@ body {
   --specialWidthVar: 170px;
   --currentImageHeight: 120px;
 }
-.articles__content {
-  .text:last-child {
-    margin-top: var(--gap-xs);
-  }
+
+.offer {
+  min-height: 408px;
+}
+.offer__partner {
+}
+.offer__footer {
 }

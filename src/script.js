@@ -1792,7 +1792,7 @@ const payment = bemEngine({
                     block: 'card',
                     mods: {
                       view: 'default',
-                      border: 'all',
+                      border: 'all'
                     }
                   },
                   {
@@ -1814,7 +1814,7 @@ const payment = bemEngine({
                     ],
                     content: [
                       {
-                        block: 'image',
+                        block: 'image'
                       }
                     ]
                   },
@@ -1968,7 +1968,7 @@ const payment = bemEngine({
                     block: 'list',
                     mods: {
                       view: 'default'
-                    },
+                    }
                   }
                 ],
                 content: [
@@ -2065,7 +2065,7 @@ const payment = bemEngine({
                                     elemMods: {
                                       width: 'm'
                                     }
-                                  },
+                                  }
                                 ]
                               },
                               {
@@ -2124,6 +2124,219 @@ const payment = bemEngine({
               }
             ]
           },
+          {
+            block: 'grid',
+            elem: 'fraction',
+            elemMods: { 'm-col': '3' },
+            content: [
+              {
+                block: 'offer',
+                mix: [
+                  {
+                    block: 'theme',
+                    mods: {
+                      color: 'megafon-brand'
+                    }
+                  },
+                  {
+                    block: 'card',
+                    mods: {
+                      view: 'default'
+                    }
+                  }
+                ],
+                content: [
+                  {
+                    block: 'offer',
+                    elem: 'partner',
+                    mix: [
+                      {
+                        block: 'card',
+                        elem: 'content',
+                        elemMods: {
+                          'space-a': 'xl'
+                        }
+                      }
+                    ],
+                    content: [
+                      {
+                        block: 'brand-logo',
+                        mods: {
+                          name: 'megafon',
+                          size: 'm'
+                        }
+                      },
+                      {
+                        block: 'offer',
+                        elem: 'name',
+                        content: [
+                          {
+                            block: 'text',
+                            mods: {
+                              view: 'ghost',
+                              size: 's'
+                            },
+                            content: [
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'm'
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        block: 'offer',
+                        elem: 'sale',
+                        content: [
+                          {
+                            block: 'text',
+                            mods: {
+                              view: 'primary',
+                              size: 'xxl'
+                            },
+                            content: [
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'm'
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    block: 'offer',
+                    elem: 'footer',
+                    mix: [
+                      {
+                        block: 'card',
+                        elem: 'footer',
+                        elemMods: {
+                          'space-a': 'xl'
+                        }
+                      }
+                    ],
+                    content: [
+                      {
+                        block: 'text',
+                        mods: {
+                          view: 'secondary',
+                          size: 'm'
+                        },
+                        content: [
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 'l'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 's'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 'm'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 'l'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 's'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 'm'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 's'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 'l'
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            block: 'grid',
+            elem: 'fraction',
+            elemMods: { 'm-col': '4' },
+            content: [
+              {
+                block: 'subscription',
+                mix: [
+                  {
+                    block: 'card',
+                    mods: {
+                      view: 'default'
+                    }
+                  },
+                  {
+                    block: 'theme',
+                    mods: {
+                      color: 'project-brand'
+                    }
+                  }
+                ],
+                content: [
+                  {
+                    block: 'subscription',
+                    elem: 'info',
+                    mix: [
+                      {
+                        block: 'card',
+                        elem: 'content',
+                        elemMods: [
+                          {
+                            'space-a': 'xl'
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
         ]
       }
     }
