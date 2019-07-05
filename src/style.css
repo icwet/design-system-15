@@ -106,8 +106,8 @@ body {
   }
   --gap: var(--gap-xxxl);
 
-  --columns-screen-m-12: repeat(auto-fill, minmax(8%, 1fr));
-  --columns-screen-m-10: repeat(auto-fill, minmax(10%, 1fr));
+  --columns-screen-m-12: repeat(auto-fit, minmax(8%, 1fr));
+  --columns-screen-m-10: repeat(auto-fit, minmax(10%, 1fr));
 
   @media screen and (max-width: 1144px) {
     grid-auto-flow: row;
@@ -166,12 +166,12 @@ body {
   display: grid;
   &_m-columns_10 {
     grid-template-columns: var(--columns-screen-m-10);
-    grid-auto-flow: --grid-one-column;
+    grid-auto-flow: var(--grid-one-column);
   }
 
   &_m-columns_12 {
     grid-template-columns: var(--columns-screen-m-12);
-    grid-auto-flow: --grid-one-column;
+    grid-auto-flow: var(--grid-one-column);
   }
 
   &_col-gap_two-thirds {
@@ -994,4 +994,26 @@ body {
   width: 179px;
   height: 34px;
   background: var(--text-main);
+}
+
+.onoffswitch {
+  width: 97px;
+  height: 32px;
+  border: 2px solid var(--border);
+}
+.onoffswitch__button {
+  width: 24px;
+  height: 24px;
+  background: var(--border);
+  margin: var(--gap-xxxs);
+}
+
+.footer {
+  max-width: 1144px;
+  margin: var(--gap-xxxl) var(--gap);
+}
+.footer__content {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
 }

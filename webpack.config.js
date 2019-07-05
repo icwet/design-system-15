@@ -55,7 +55,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './index.html'
+    }),
     new HtmlWebpackPlugin({
       filename: 'content-blocks.html',
       template: './content-blocks.html'
