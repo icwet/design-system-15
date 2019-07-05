@@ -12,7 +12,7 @@ const payment = bemEngine({
       elemMods: { size: 'm', align: 'center' },
       content: {
         block: 'grid',
-        mods: { 'm-columns': '12' },
+        mods: { 'm-columns': '10' },
         content: [
           // {
           //   block: 'grid',
@@ -1783,6 +1783,28 @@ const payment = bemEngine({
           {
             block: 'grid',
             elem: 'fraction',
+            elemMods: { 'm-col': '8' },
+            content: [
+              {
+                block: 'header',
+                content: [
+                  {
+                    block: 'header',
+                    elem: 'content',
+                    content: [
+                      {
+                        block: 'header',
+                        elem: 'logo'
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            block: 'grid',
+            elem: 'fraction',
             elemMods: { 'm-col': '3' },
             content: [
               {
@@ -2299,7 +2321,7 @@ const payment = bemEngine({
           {
             block: 'grid',
             elem: 'fraction',
-            elemMods: { 'm-col': '4' },
+            elemMods: { 'm-col': '3' },
             content: [
               {
                 block: 'subscription',
@@ -2325,9 +2347,517 @@ const payment = bemEngine({
                       {
                         block: 'card',
                         elem: 'content',
-                        elemMods: [
+                        elemMods: {
+                          'space-a': 'xl'
+                        }
+                      }
+                    ],
+                    content: [
+                      {
+                        block: 'subscription',
+                        elem: 'title',
+                        content: [
                           {
-                            'space-a': 'xl'
+                            block: 'text',
+                            mods: {
+                              view: 'primary',
+                              size: 'xxl'
+                            },
+                            content: [
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    block: 'subscription',
+                    elem: 'advantages',
+                    mix: [
+                      {
+                        block: 'list'
+                      }
+                    ],
+                    content: [
+                      {
+                        block: 'subscription',
+                        elem: 'advantage',
+                        mix: [
+                          {
+                            block: 'list',
+                            elem: 'item',
+                            elemMods: {
+                              'space-b': 's'
+                            }
+                          }
+                        ],
+                        content: [
+                          {
+                            block: 'text',
+                            mods: {
+                              view: 'primary',
+                              size: 'l'
+                            },
+                            content: [
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'm'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 's'
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        block: 'subscription',
+                        elem: 'advantage',
+                        mix: [
+                          {
+                            block: 'list',
+                            elem: 'item',
+                            elemMods: {
+                              'space-b': 's'
+                            }
+                          }
+                        ],
+                        content: [
+                          {
+                            block: 'text',
+                            mods: {
+                              view: 'primary',
+                              size: 'l'
+                            },
+                            content: [
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 's'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 's'
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        block: 'subscription',
+                        elem: 'advantage',
+                        mix: [
+                          {
+                            block: 'list',
+                            elem: 'item',
+                            elemMods: {
+                              'space-b': 's'
+                            }
+                          }
+                        ],
+                        content: [
+                          {
+                            block: 'text',
+                            mods: {
+                              view: 'primary',
+                              size: 'l'
+                            },
+                            content: [
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'm'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 's'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 's'
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        block: 'subscription',
+                        elem: 'advantage',
+                        mix: [
+                          {
+                            block: 'list',
+                            elem: 'item',
+                            elemMods: {
+                              'space-b': 's'
+                            }
+                          }
+                        ],
+                        content: [
+                          {
+                            block: 'text',
+                            mods: {
+                              view: 'primary',
+                              size: 'l'
+                            },
+                            content: [
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 's'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 's'
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        block: 'subscription',
+                        elem: 'advantage',
+                        mix: [
+                          {
+                            block: 'list',
+                            elem: 'item',
+                            elemMods: {
+                              'space-b': 's'
+                            }
+                          }
+                        ],
+                        content: [
+                          {
+                            block: 'text',
+                            mods: {
+                              view: 'primary',
+                              size: 'l'
+                            },
+                            content: [
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'm'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 's'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 's'
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    block: 'subscription',
+                    elem: 'footer',
+                    mix: [
+                      {
+                        block: 'card',
+                        elem: 'footer',
+                        elemMods: {
+                          'space-a': 'xl'
+                        }
+                      },
+                      {
+                        block: 'list'
+                      }
+                    ],
+                    content: [
+                      {
+                        block: 'subscription',
+                        elem: 'control',
+                        mix: [
+                          {
+                            block: 'list',
+                            elem: 'item',
+                            elemMods: {
+                              'space-b': 's'
+                            }
+                          }
+                        ],
+                        content: [
+                          {
+                            block: 'input',
+                            mods: {
+                              size: 'l'
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        block: 'button',
+                        mods: {
+                          size: 'l',
+                          width: 'full'
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            block: 'grid',
+            elem: 'fraction',
+            elemMods: { 'm-col': '5' },
+            content: [
+              {
+                block: 'event',
+                mix: [
+                  {
+                    block: 'card',
+                    mods: {
+                      view: 'default'
+                    }
+                  },
+                  {
+                    block: 'theme',
+                    mods: {
+                      color: 'project-inverse'
+                    },
+                  }
+                ],
+                content: [
+                  {
+                    block: 'event',
+                    elem: 'content',
+                    mix: [
+                      {
+                        block: 'card',
+                        elem: 'content',
+                        elemMods: {
+                          'vertical-align': 'center',
+                          distribute: 'center',
+                          'space-a': 'xxl'
+                        }
+                      }
+                    ],
+                    content: [
+                      {
+                        block: 'event',
+                        elem: 'preview',
+                        content: [
+                          {
+                            block: 'event',
+                            elem: 'speaker',
+                            content: [
+                              {
+                                block: 'avatar',
+                                mods: {
+                                  size: 'm'
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            block: 'brand-logo',
+                            mods: {
+                              name: 'mts',
+                              size: 'm'
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        block: 'event',
+                        elem: 'title',
+                        content: [
+                          {
+                            block: 'text',
+                            mods: {
+                              view: 'primary',
+                              size: 'xxl',
+                              align: 'center'
+                            },
+                            content: [
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        block: 'event',
+                        elem: 'description',
+                        content: [
+                          {
+                            block: 'text',
+                            mods: {
+                              size: 'l',
+                              align: 'center',
+                              view: 'primary'
+                            },
+                            content: [
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              },
+                              {
+                                block: 'text',
+                                elem: 'word',
+                                elemMods: {
+                                  width: 'l'
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    block: 'event',
+                    elem: 'footer',
+                    mix: [
+                      {
+                        block: 'card',
+                        elem: 'footer',
+                        elemMods: {
+                          'vertical-align': 'center',
+                          distribute: 'center',
+                          'space-a': 'xxl'
+                        }
+                      }
+                    ],
+                    content: [
+                      {
+                        block: 'text',
+                        mods: {
+                          size: 'xl',
+                          view: 'link',
+                          align: 'center'
+                        },
+                        content: [
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 's'
+                            }
+                          },
+                          {
+                            block: 'text',
+                            elem: 'word',
+                            elemMods: {
+                              width: 's'
+                            }
                           }
                         ]
                       }

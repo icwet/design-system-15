@@ -573,7 +573,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   &_align_center {
-    justify-self: center;
+    justify-content: center;
   }
 
   &_size_s {
@@ -959,4 +959,39 @@ body {
 .offer__partner {
 }
 .offer__footer {
+}
+
+.subscription {
+  min-height: 408px;
+  grid-auto-rows: min-content;
+}
+.subscription__control {
+  margin-bottom: var(--gap-s);
+}
+.subscription__advantages {
+  padding: var(--gap-xl);
+}
+
+.event {
+  min-height: 333px;
+}
+.event__preview {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  justify-self: center;
+  gap: var(--gap-s);
+  margin-bottom: var(--gap-xl);
+}
+.event__title {
+  margin-bottom: var(--gap-s);
+}
+
+.header {
+  padding: var(--gap-xxxl) var(--gap);
+}
+.header__logo {
+  width: 179px;
+  height: 34px;
+  background: var(--text-main);
 }
