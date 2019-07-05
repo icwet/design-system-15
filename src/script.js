@@ -2966,7 +2966,11 @@ const index = bemEngine({
 });
 
 let contentBlocks = document.getElementById('content-blocks');
-contentBlocks.innerHTML += payment;
+if (contentBlocks) {
+  contentBlocks.innerHTML += payment;
+}
 
 let indexPage = document.getElementById('index');
-indexPage.innerHTML += index;
+if (indexPage) {
+  indexPage.innerHTML += index;
+}

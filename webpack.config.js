@@ -55,14 +55,16 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './index.html'
-    }),
+    new HtmlWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: 'content-blocks.html',
       template: './content-blocks.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'index-page.html',
+      template: './index-page.html'
+    }),
+
     new MiniCssExtractPlugin({
       filename: devMode ? 'style.css' : 'style.[hash].css'
     }),
