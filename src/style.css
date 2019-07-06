@@ -16,7 +16,7 @@ body {
 
   &_color_project-default {
     --background-default: #ffffff;
-    --background-accent: #007bff;
+    --background-accent: #0056B3;
     --border: #000000;
 
     --text-main: #000000;
@@ -106,8 +106,8 @@ body {
   }
   --gap: var(--gap-xxxl);
 
-  --columns-screen-m-12: repeat(auto-fit, minmax(8%, 1fr));
-  --columns-screen-m-10: repeat(auto-fit, minmax(10%, 1fr));
+  --columns-screen-m-12: repeat(12, 1fr);
+  --columns-screen-m-10: repeat(10, 1fr);
 
   @media screen and (max-width: 1144px) {
     grid-auto-flow: row;
@@ -187,11 +187,11 @@ body {
   }
 
   &_row-gap_half {
-    row-gap: calc(var(--gap) * 0.5);
+    margin-bottom: calc(var(--gap) * 0.5);
   }
 
   &_row-gap_full {
-    row-gap: var(--gap);
+    margin-bottom: var(--gap);
   }
 }
 
@@ -305,9 +305,10 @@ body {
   }
 
   &_distribute_between {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-between;
+    display: flex;
+    //display: grid;
+    //grid-auto-flow: column;
+
   }
 
   &_vertical-align_center {
@@ -444,6 +445,21 @@ body {
 .form__label {
   &_width_default {
     width: 35%;
+  }
+}
+
+.form__control {
+  flex-grow: 2;
+}
+
+.informer {
+  background: var(--background-default);
+  &_border_all {
+    border: 3px solid var(--background-default)
+  }
+  &_view_default {
+    --text-main: #fff;
+    --background-default: #f79a00;
   }
 }
 
@@ -652,6 +668,7 @@ body {
 .text__word {
   background: var(--text-view);
   height: var(--elemsHeight);
+  margin-top: var(--wordLineHeight);
 
   &_width_s {
     width: var(--elemsWidthS);
@@ -724,6 +741,9 @@ body {
     width: 72px;
     height: 72px;
   }
+  &_view_primary {
+    margin: var(--gap-m) 0;
+  }
 }
 
 .button {
@@ -752,6 +772,7 @@ body {
 
 .input {
   width: 100%;
+  border: 3px solid var(--border);
 
   &_size_s {
     height: 24px;
@@ -803,8 +824,15 @@ body {
   display: grid;
   grid-template-rows: 1fr min-content;
   min-height: 335px;
+  height: 100%;
+}
+.warning__content {
+  --wordLineHeight: 17px;
+
+  grid-auto-rows: min-content;
 }
 .warning__button-wrapper {
+  --background-accent: #fff;
   align-items: center;
 }
 .warning__placeholder {
@@ -989,6 +1017,12 @@ body {
 
 .header {
   padding: var(--gap-xxxl) var(--gap);
+}
+.header__content {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  justify-items: stretch;
 }
 .header__logo {
   width: 179px;

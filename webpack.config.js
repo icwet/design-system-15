@@ -61,8 +61,8 @@ module.exports = {
       template: './content-blocks.html'
     }),
     new HtmlWebpackPlugin({
-      filename: 'index-page.html',
-      template: './index-page.html'
+      filename: 'index.html',
+      template: './index.html'
     }),
 
     new MiniCssExtractPlugin({
