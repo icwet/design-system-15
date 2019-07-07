@@ -2953,6 +2953,30 @@ const index = bemEngine({
       block: 'layout',
       content: [
         {
+          block: 'header',
+          content: [
+            {
+              block: 'header',
+              elem: 'content',
+              content: [
+                {
+                  block: 'header',
+                  elem: 'logo'
+                },
+                {
+                  block: 'onoffswitch',
+                  content: [
+                    {
+                      block: 'onoffswitch',
+                      elem: 'button'
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           block: 'layout',
           elem: 'container',
           elemMods: {
@@ -2961,30 +2985,6 @@ const index = bemEngine({
             'indent-b': 'xxl'
           },
           content: [
-            {
-              block: 'header',
-              content: [
-                {
-                  block: 'header',
-                  elem: 'content',
-                  content: [
-                    {
-                      block: 'header',
-                      elem: 'logo'
-                    },
-                    {
-                      block: 'onoffswitch',
-                      content: [
-                        {
-                          block: 'onoffswitch',
-                          elem: 'button'
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
             {
               block: 'grid',
               mods: { 'm-columns': '10', 'col-gap': 'full' },

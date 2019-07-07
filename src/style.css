@@ -514,6 +514,9 @@ body {
   &_border_bottom {
     border-bottom: 3px solid var(--border);
   }
+  &:last-child {
+    border-bottom: unset;
+  }
   &_border_top {
     border-top: 3px solid var(--border);
   }
