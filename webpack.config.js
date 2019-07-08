@@ -56,6 +56,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './index.html'
+    }),
+    new HtmlWebpackPlugin({
       filename: 'product.html',
       template: './product.html'
     }),
@@ -64,8 +68,8 @@ module.exports = {
       template: './content-blocks.html'
     }),
     new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './index.html'
+      filename: 'collect.html',
+      template: './collect.html'
     }),
 
     new MiniCssExtractPlugin({
