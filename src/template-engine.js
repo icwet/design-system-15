@@ -74,5 +74,6 @@ export default function(obj) {
     }
     return output;
   }
+
   return toHTML(obj);
 }

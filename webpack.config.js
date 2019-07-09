@@ -7,6 +7,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 module.exports = {
   entry: {
     'template-engine': './src/template-engine.js',
+    'template-layout': './src/templates/template-layout.js',
     script: './src/script.js'
   },
   devtool: 'source-map',
