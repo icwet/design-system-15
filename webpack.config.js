@@ -71,6 +71,10 @@ module.exports = {
       filename: 'collect.html',
       template: './collect.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'content.html',
+      template: './content.html'
+    }),
 
     new MiniCssExtractPlugin({
       filename: devMode ? 'style.css' : 'style.[hash].css'
