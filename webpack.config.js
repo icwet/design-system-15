@@ -57,23 +57,23 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './index.html'
+      template: './src/templates/index.html'
     }),
     new HtmlWebpackPlugin({
       filename: 'product.html',
-      template: './product.html'
+      template: './src/templates/product.html'
     }),
     new HtmlWebpackPlugin({
       filename: 'content-blocks.html',
-      template: './content-blocks.html'
+      template: './src/templates/content-blocks.html'
     }),
     new HtmlWebpackPlugin({
       filename: 'collect.html',
-      template: './collect.html'
+      template: './src/templates/collect.html'
     }),
     new HtmlWebpackPlugin({
       filename: 'content.html',
-      template: './content.html'
+      template: './src/templates/content.html'
     }),
 
     new MiniCssExtractPlugin({

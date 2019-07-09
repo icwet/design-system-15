@@ -16,7 +16,7 @@ body {
 
   &_color_project-default {
     --background-default: #ffffff;
-    --background-accent: #0056B3;
+    --background-accent: #0056b3;
     --border: #000000;
 
     --text-main: #000000;
@@ -308,7 +308,6 @@ body {
     display: flex;
     //display: grid;
     //grid-auto-flow: column;
-
   }
 
   &_vertical-align_center {
@@ -455,7 +454,7 @@ body {
 .informer {
   background: var(--background-default);
   &_border_all {
-    border: 3px solid var(--background-default)
+    border: 3px solid var(--background-default);
   }
   &_view_default {
     --text-main: #fff;
@@ -601,6 +600,7 @@ body {
     --elemsWidthL: 100px;
 
     --elemsHeight: 7px;
+    --elemsLineHeight: var(--lh-s);
   }
 
   &_size_m {
@@ -609,6 +609,7 @@ body {
     --elemsWidthL: 114px;
 
     --elemsHeight: 8px;
+    --elemsLineHeight: var(--lh-m);
   }
 
   &_size_l {
@@ -617,6 +618,7 @@ body {
     --elemsWidthL: 138px;
 
     --elemsHeight: 10px;
+    --elemsLineHeight: var(--lh-l);
   }
 
   &_size_xl {
@@ -625,6 +627,7 @@ body {
     --elemsWidthL: 15px;
 
     --elemsHeight: 11px;
+    --elemsLineHeight: var(--lh-xl);
   }
 
   &_size_xxl {
@@ -633,6 +636,7 @@ body {
     --elemsWidthL: 184px;
 
     --elemsHeight: 13px;
+    --elemsLineHeight: var(--lh-xxl);
   }
 
   &_type_h1 {
@@ -671,7 +675,9 @@ body {
 .text__word {
   background: var(--text-view);
   height: var(--elemsHeight);
-  margin-top: var(--wordLineHeight);
+
+  margin-top: calc((var(--elemsLineHeight) - var(--elemsHeight)) / 2);
+  margin-bottom: calc((var(--elemsLineHeight) - var(--elemsHeight)) / 2);
 
   &_width_s {
     width: var(--elemsWidthS);
@@ -830,8 +836,6 @@ body {
   height: 100%;
 }
 .warning__content {
-  --wordLineHeight: 17px;
-
   grid-auto-rows: min-content;
 }
 .warning__button-wrapper {
