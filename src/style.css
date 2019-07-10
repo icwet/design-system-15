@@ -1051,7 +1051,7 @@ body {
 
 .footer {
   max-width: 1144px;
-  margin: var(--gap-xxxl) var(--gap);
+  padding: var(--gap-xxxl) var(--gap);
 }
 .footer__content {
   display: grid;

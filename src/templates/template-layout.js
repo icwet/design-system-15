@@ -2953,22 +2953,32 @@ const index = bemEngine({
       block: 'layout',
       content: [
         {
-          block: 'header',
+          block: 'layout',
+          elem: 'container',
+          elemMods: {
+            size: 'm',
+            align: 'center'
+          },
           content: [
             {
               block: 'header',
-              elem: 'content',
               content: [
                 {
                   block: 'header',
-                  elem: 'logo'
-                },
-                {
-                  block: 'onoffswitch',
+                  elem: 'content',
                   content: [
                     {
+                      block: 'header',
+                      elem: 'logo'
+                    },
+                    {
                       block: 'onoffswitch',
-                      elem: 'button'
+                      content: [
+                        {
+                          block: 'onoffswitch',
+                          elem: 'button'
+                        }
+                      ]
                     }
                   ]
                 }
@@ -4997,48 +5007,58 @@ const index = bemEngine({
           ]
         },
         {
-          block: 'footer',
+          block: 'layout',
+          elem: 'container',
+          elemMods: {
+            size: 'm',
+            align: 'center'
+          },
           content: [
             {
               block: 'footer',
-              elem: 'content',
               content: [
                 {
-                  block: 'text',
-                  mods: {
-                    view: 'primary',
-                    size: 'l'
-                  },
+                  block: 'footer',
+                  elem: 'content',
                   content: [
                     {
                       block: 'text',
-                      elem: 'word',
-                      elemMods: {
-                        width: 'l'
-                      }
+                      mods: {
+                        view: 'primary',
+                        size: 'l'
+                      },
+                      content: [
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: {
+                            width: 'l'
+                          }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: {
+                            width: 's'
+                          }
+                        }
+                      ]
                     },
                     {
                       block: 'text',
-                      elem: 'word',
-                      elemMods: {
-                        width: 's'
-                      }
-                    }
-                  ]
-                },
-                {
-                  block: 'text',
-                  mods: {
-                    view: 'primary',
-                    size: 'l'
-                  },
-                  content: [
-                    {
-                      block: 'text',
-                      elem: 'word',
-                      elemMods: {
-                        width: 'l'
-                      }
+                      mods: {
+                        view: 'primary',
+                        size: 'l'
+                      },
+                      content: [
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: {
+                            width: 'l'
+                          }
+                        }
+                      ]
                     }
                   ]
                 }
@@ -7729,7 +7749,7 @@ const content = bemEngine({
           block: 'layout',
           elem: 'container',
           elemMods: {
-            size: 'm',
+            size: 's',
             align: 'center',
             'indent-b': 'xxxxl'
           },
@@ -7761,8 +7781,9 @@ const content = bemEngine({
             {
               block: 'text',
               mods: {
-                size: 'xxl',
-                view: 'primary'
+                size: 'l',
+                view: 'primary',
+                type: 'p'
               },
               content: [
                 {
@@ -7776,7 +7797,105 @@ const content = bemEngine({
                   block: 'text',
                   elem: 'word',
                   elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
                     width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
                   }
                 },
                 {
@@ -7818,7 +7937,14 @@ const content = bemEngine({
                   block: 'text',
                   elem: 'word',
                   elemMods: {
-                    width: 'l'
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
                   }
                 },
                 {
@@ -7860,7 +7986,14 @@ const content = bemEngine({
                   block: 'text',
                   elem: 'word',
                   elemMods: {
-                    width: 'l'
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
                   }
                 },
                 {
@@ -7874,119 +8007,7 @@ const content = bemEngine({
                   block: 'text',
                   elem: 'word',
                   elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
+                    width: 's'
                   }
                 },
                 {
@@ -8004,23 +8025,13 @@ const content = bemEngine({
                   }
                 }
               ]
-            }
-          ]
-        },
-        {
-          block: 'layout',
-          elem: 'container',
-          elemMods: {
-            size: 'm',
-            align: 'center',
-            'indent-b': 'xxxxl'
-          },
-          content: [
+            },
             {
               block: 'text',
               mods: {
-                size: 'xxl',
-                view: 'primary'
+                size: 'l',
+                view: 'primary',
+                type: 'p'
               },
               content: [
                 {
@@ -8034,7 +8045,105 @@ const content = bemEngine({
                   block: 'text',
                   elem: 'word',
                   elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
                     width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
                   }
                 },
                 {
@@ -8076,7 +8185,14 @@ const content = bemEngine({
                   block: 'text',
                   elem: 'word',
                   elemMods: {
-                    width: 'l'
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
                   }
                 },
                 {
@@ -8118,7 +8234,14 @@ const content = bemEngine({
                   block: 'text',
                   elem: 'word',
                   elemMods: {
-                    width: 'l'
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
                   }
                 },
                 {
@@ -8132,119 +8255,7 @@ const content = bemEngine({
                   block: 'text',
                   elem: 'word',
                   elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
+                    width: 's'
                   }
                 },
                 {
@@ -8706,7 +8717,8 @@ const content = bemEngine({
               block: 'text',
               mods: {
                 size: 'xxl',
-                view: 'primary'
+                view: 'primary',
+                type: 'h2'
               },
               content: [
                 {
