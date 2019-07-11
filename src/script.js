@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const list = document.body.querySelector('.history');
-  const listElems = list.children;
-  for (let elem = 0; elem < listElems.length; elem++) {
-    listElems[elem].onclick = function(action) {};
-  }
+  const list = document.querySelector('.history');
 
-  function show(element) {
-    element.style.display = 'block';
-  }
-  function hide(element) {
-    element.style.display = 'none';
-  }
+  list.addEventListener('click', function(action) {
+    const target = action.target;
+    console.log(target);
+    const listVisibleElem = document.querySelector('.e-accordion__short');
+    // console.log(listVisibleElem);
+    if (target === listVisibleElem) {
+      const listInvisibleElement = document.querySelector('.e-accordion__more');
+      listInvisibleElement.style.display = 'block';
+      // console.log(listInvisibleElement);
+    }
+  });
 });

@@ -1,9 +1,9 @@
-import styles from '../style.css';
+import '../style.css';
 import bemEngine from '../template-engine';
 
 const blocks = bemEngine({
   block: 'theme',
-  mods: { color: 'project-default', size: 'default', space: 'default' },
+  mods: { color: 'project-default', size: 'default', space: 'default', gap: 'small' },
   content: {
     block: 'layout',
     content: {
@@ -2947,38 +2947,28 @@ const blocks = bemEngine({
 
 const index = bemEngine({
   block: 'theme',
-  mods: { color: 'project-default', size: 'default', space: 'default' },
+  mods: { color: 'project-default', size: 'default', space: 'default', gap: 'small' },
   content: [
     {
       block: 'layout',
       content: [
         {
-          block: 'layout',
-          elem: 'container',
-          elemMods: {
-            size: 'm',
-            align: 'center'
-          },
+          block: 'header',
           content: [
             {
               block: 'header',
+              elem: 'content',
               content: [
                 {
                   block: 'header',
-                  elem: 'content',
+                  elem: 'logo'
+                },
+                {
+                  block: 'onoffswitch',
                   content: [
                     {
-                      block: 'header',
-                      elem: 'logo'
-                    },
-                    {
                       block: 'onoffswitch',
-                      content: [
-                        {
-                          block: 'onoffswitch',
-                          elem: 'button'
-                        }
-                      ]
+                      elem: 'button'
                     }
                   ]
                 }
@@ -5007,58 +4997,48 @@ const index = bemEngine({
           ]
         },
         {
-          block: 'layout',
-          elem: 'container',
-          elemMods: {
-            size: 'm',
-            align: 'center'
-          },
+          block: 'footer',
           content: [
             {
               block: 'footer',
+              elem: 'content',
               content: [
                 {
-                  block: 'footer',
-                  elem: 'content',
+                  block: 'text',
+                  mods: {
+                    view: 'primary',
+                    size: 'l'
+                  },
                   content: [
                     {
                       block: 'text',
-                      mods: {
-                        view: 'primary',
-                        size: 'l'
-                      },
-                      content: [
-                        {
-                          block: 'text',
-                          elem: 'word',
-                          elemMods: {
-                            width: 'l'
-                          }
-                        },
-                        {
-                          block: 'text',
-                          elem: 'word',
-                          elemMods: {
-                            width: 's'
-                          }
-                        }
-                      ]
+                      elem: 'word',
+                      elemMods: {
+                        width: 'l'
+                      }
                     },
                     {
                       block: 'text',
-                      mods: {
-                        view: 'primary',
-                        size: 'l'
-                      },
-                      content: [
-                        {
-                          block: 'text',
-                          elem: 'word',
-                          elemMods: {
-                            width: 'l'
-                          }
-                        }
-                      ]
+                      elem: 'word',
+                      elemMods: {
+                        width: 's'
+                      }
+                    }
+                  ]
+                },
+                {
+                  block: 'text',
+                  mods: {
+                    view: 'primary',
+                    size: 'l'
+                  },
+                  content: [
+                    {
+                      block: 'text',
+                      elem: 'word',
+                      elemMods: {
+                        width: 'l'
+                      }
                     }
                   ]
                 }
@@ -5073,7 +5053,7 @@ const index = bemEngine({
 
 const product = bemEngine({
   block: 'theme',
-  mods: { color: 'project-default', size: 'default', space: 'default' },
+  mods: { color: 'project-default', size: 'default', space: 'default', gap: 'small' },
   content: [
     {
       block: 'layout',
@@ -6201,7 +6181,7 @@ const product = bemEngine({
 
 const collect = bemEngine({
   block: 'theme',
-  mods: { color: 'project-default', size: 'default', space: 'default' },
+  mods: { color: 'project-default', size: 'default', space: 'default', gap: 'small' },
   content: [
     {
       block: 'layout',
@@ -7716,7 +7696,7 @@ const collect = bemEngine({
 
 const content = bemEngine({
   block: 'theme',
-  mods: { color: 'project-default', size: 'default', space: 'default' },
+  mods: { color: 'project-default', size: 'default', space: 'default', gap: 'small' },
   content: [
     {
       block: 'layout',
