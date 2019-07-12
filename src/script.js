@@ -1,15 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const list = document.querySelector('.history');
-
-  list.addEventListener('click', function(action) {
-    const target = action.target;
+  document.body.addEventListener('click', function(event) {
+    let target = event.target;
     console.log(target);
-    const listVisibleElem = document.querySelector('.e-accordion__short');
-    // console.log(listVisibleElem);
-    if (target === listVisibleElem) {
-      const listInvisibleElement = document.querySelector('.e-accordion__more');
-      listInvisibleElement.style.display = 'block';
-      // console.log(listInvisibleElement);
+
+    const visibleElem = target.classList[0];
+    while (target !== this) {
+      if (visibleElem === 'history__transaction') {
+        const hideElem = document.querySelector('.history__hide');
+        if (searchParent(hideElem, visibleElem)) {
+          hideElem.classList.toggle('e-accordion__more');
+        }
+        return;
+      }
+      target = target.parentNode;
+    }
+    function searchParent(elem, elemParent) {
+      return Boolean(elem.closest(elemParent));
     }
   });
 });

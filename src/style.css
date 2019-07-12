@@ -865,7 +865,7 @@ body {
   display: grid;
 }
 
-.history__hide {
+.e-accordion__more {
   display: none;
 }
 

@@ -9602,27 +9602,27 @@ const content = bemEngine({
   ]
 });
 
-let contentBlocks = document.getElementById('content-blocks');
+const contentBlocks = document.getElementById('content-blocks');
 if (contentBlocks) {
   contentBlocks.innerHTML += blocks;
 }
 
-let indexPage = document.getElementById('index');
+const indexPage = document.getElementById('index');
 if (indexPage) {
   indexPage.innerHTML += index;
 }
 
-let productPage = document.getElementById('product');
+const productPage = document.getElementById('product');
 if (productPage) {
   productPage.innerHTML += product;
 }
 
-let collectPage = document.getElementById('collect');
+const collectPage = document.getElementById('collect');
 if (collectPage) {
   collectPage.innerHTML += collect;
 }
 
-let contentPage = document.getElementById('content');
+const contentPage = document.getElementById('content');
 if (contentPage) {
   contentPage.innerHTML += content;
 }
