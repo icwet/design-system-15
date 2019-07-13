@@ -2947,13 +2947,18 @@ const blocks = bemEngine({
 
 const index = bemEngine({
   block: 'theme',
-  mods: { color: 'project-default', size: 'default', space: 'default', gap: 'small' },
+  mods: { color: 'project-default', size: 'default', space: 'default' },
   content: [
     {
       block: 'layout',
       content: [
         {
           block: 'header',
+          mix: [
+            {
+              block: 'theme'
+            }
+          ],
           content: [
             {
               block: 'header',
@@ -4998,6 +5003,11 @@ const index = bemEngine({
         },
         {
           block: 'footer',
+          mix: [
+            {
+              block: 'theme'
+            }
+          ],
           content: [
             {
               block: 'footer',
@@ -5053,13 +5063,18 @@ const index = bemEngine({
 
 const product = bemEngine({
   block: 'theme',
-  mods: { color: 'project-default', size: 'default', space: 'default', gap: 'small' },
+  mods: { color: 'project-default', size: 'default', space: 'default' },
   content: [
     {
       block: 'layout',
       content: [
         {
           block: 'header',
+          mix: [
+            {
+              block: 'theme'
+            }
+          ],
           content: [
             {
               block: 'header',
@@ -5115,7 +5130,7 @@ const product = bemEngine({
                     },
                     {
                       block: 'text',
-                      mods: { view: 'primary', size: 'xl' },
+                      mods: { view: 'primary', size: 'm' },
                       content: [
                         {
                           block: 'text',
@@ -5125,67 +5140,67 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
@@ -5205,12 +5220,12 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
@@ -5220,42 +5235,42 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
@@ -5275,7 +5290,7 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
@@ -5285,47 +5300,47 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
@@ -5345,12 +5360,12 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
@@ -5360,42 +5375,42 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
@@ -5410,12 +5425,12 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
@@ -5425,47 +5440,47 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
@@ -5475,7 +5490,7 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
@@ -5485,7 +5500,7 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
@@ -5495,27 +5510,27 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
@@ -5525,17 +5540,17 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
@@ -5550,47 +5565,47 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
@@ -5610,7 +5625,7 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
@@ -5620,12 +5635,76 @@ const product = bemEngine({
                         {
                           block: 'text',
                           elem: 'word',
-                          elemMods: { width: 'l' }
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 's' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
                           elemMods: { width: 'l' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        }
+                      ]
+                    },
+                    {
+                      block: 'text',
+                      mods: { view: 'primary', size: 'xxl', type: 'h2' },
+                      content: [
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: {
+                            width: 'l'
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      block: 'text',
+                      mods: { view: 'primary', size: 'm' },
+                      content: [
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
@@ -5641,16 +5720,86 @@ const product = bemEngine({
                           block: 'text',
                           elem: 'word',
                           elemMods: { width: 'l' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
                           elemMods: { width: 'l' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 's' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 's' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 's' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
                           elemMods: { width: 'l' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
                         },
                         {
                           block: 'text',
@@ -5661,11 +5810,56 @@ const product = bemEngine({
                           block: 'text',
                           elem: 'word',
                           elemMods: { width: 'l' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 's' }
                         },
                         {
                           block: 'text',
                           elem: 'word',
                           elemMods: { width: 'l' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 's' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 'm' }
+                        },
+                        {
+                          block: 'text',
+                          elem: 'word',
+                          elemMods: { width: 's' }
                         }
                       ]
                     }
@@ -5787,330 +5981,339 @@ const product = bemEngine({
           ]
         },
         {
-          block: 'layout',
-          elem: 'container',
-          elemMods: {
-            size: 'm',
-            align: 'center',
-            'indent-b': 'xxxxl'
+          block: 'theme',
+          mods: {
+            color: 'project-inverse',
+            gap: 'small'
           },
           content: [
             {
-              block: 'text',
-              mods: {
-                size: 'xxl',
-                view: 'primary',
-                type: 'h2'
+              block: 'layout',
+              elem: 'container',
+              elemMods: {
+                size: 'm',
+                align: 'center',
+                'indent-b': 'xxxxl'
               },
               content: [
                 {
                   block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                }
-              ]
-            },
-            {
-              block: 'grid',
-              mods: { 'm-columns': '12', 'col-gap': 'full' },
-              content: [
-                {
-                  block: 'grid',
-                  elem: 'fraction',
-                  elemMods: { 'm-col': '3' },
+                  mods: {
+                    size: 'xxl',
+                    view: 'primary',
+                    type: 'h2'
+                  },
                   content: [
                     {
-                      block: 'product',
-                      mix: [
-                        {
-                          block: 'card',
-                          mods: {
-                            view: 'default',
-                            border: 'all'
-                          }
-                        }
-                      ],
+                      block: 'text',
+                      elem: 'word',
+                      elemMods: {
+                        width: 'l'
+                      }
+                    }
+                  ]
+                },
+                {
+                  block: 'grid',
+                  mods: { 'm-columns': '12', 'col-gap': 'full' },
+                  content: [
+                    {
+                      block: 'grid',
+                      elem: 'fraction',
+                      elemMods: { 'm-col': '3' },
                       content: [
                         {
                           block: 'product',
-                          elem: 'content',
                           mix: [
                             {
                               block: 'card',
+                              mods: {
+                                view: 'default',
+                                border: 'all'
+                              }
+                            }
+                          ],
+                          content: [
+                            {
+                              block: 'product',
                               elem: 'content',
-                              elemMods: {
-                                'space-a': 'm'
-                              }
-                            }
-                          ],
-                          content: [
-                            {
-                              block: 'image'
-                            }
-                          ]
-                        },
-                        {
-                          block: 'product',
-                          elem: 'footer',
-                          mix: [
-                            {
-                              block: 'card',
-                              elem: 'footer',
-                              elemMods: {
-                                'space-a': 'm'
-                              }
-                            }
-                          ],
-                          content: [
-                            {
-                              block: 'text',
-                              mods: { size: 'm', view: 'primary' },
+                              mix: [
+                                {
+                                  block: 'card',
+                                  elem: 'content',
+                                  elemMods: {
+                                    'space-a': 'm'
+                                  }
+                                }
+                              ],
                               content: [
                                 {
-                                  block: 'text',
-                                  elem: 'word',
-                                  elemMods: { width: 'l' }
+                                  block: 'image'
                                 }
                               ]
                             },
                             {
-                              block: 'text',
-                              mods: { size: 's', view: 'primary' },
+                              block: 'product',
+                              elem: 'footer',
+                              mix: [
+                                {
+                                  block: 'card',
+                                  elem: 'footer',
+                                  elemMods: {
+                                    'space-a': 'm'
+                                  }
+                                }
+                              ],
                               content: [
                                 {
                                   block: 'text',
-                                  elem: 'word',
-                                  elemMods: { width: 'm' }
+                                  mods: { size: 'm', view: 'primary' },
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      elem: 'word',
+                                      elemMods: { width: 'l' }
+                                    }
+                                  ]
+                                },
+                                {
+                                  block: 'text',
+                                  mods: { size: 's', view: 'primary' },
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      elem: 'word',
+                                      elemMods: { width: 'm' }
+                                    }
+                                  ]
                                 }
                               ]
                             }
                           ]
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  block: 'grid',
-                  elem: 'fraction',
-                  elemMods: { 'm-col': '3' },
-                  content: [
+                    },
                     {
-                      block: 'product',
-                      mix: [
-                        {
-                          block: 'card',
-                          mods: {
-                            view: 'default',
-                            border: 'all'
-                          }
-                        }
-                      ],
+                      block: 'grid',
+                      elem: 'fraction',
+                      elemMods: { 'm-col': '3' },
                       content: [
                         {
                           block: 'product',
-                          elem: 'content',
                           mix: [
                             {
                               block: 'card',
+                              mods: {
+                                view: 'default',
+                                border: 'all'
+                              }
+                            }
+                          ],
+                          content: [
+                            {
+                              block: 'product',
                               elem: 'content',
-                              elemMods: {
-                                'space-a': 'm'
-                              }
-                            }
-                          ],
-                          content: [
-                            {
-                              block: 'image'
-                            }
-                          ]
-                        },
-                        {
-                          block: 'product',
-                          elem: 'footer',
-                          mix: [
-                            {
-                              block: 'card',
-                              elem: 'footer',
-                              elemMods: {
-                                'space-a': 'm'
-                              }
-                            }
-                          ],
-                          content: [
-                            {
-                              block: 'text',
-                              mods: { size: 'm', view: 'primary' },
+                              mix: [
+                                {
+                                  block: 'card',
+                                  elem: 'content',
+                                  elemMods: {
+                                    'space-a': 'm'
+                                  }
+                                }
+                              ],
                               content: [
                                 {
-                                  block: 'text',
-                                  elem: 'word',
-                                  elemMods: { width: 'l' }
+                                  block: 'image'
                                 }
                               ]
                             },
                             {
-                              block: 'text',
-                              mods: { size: 's', view: 'primary' },
+                              block: 'product',
+                              elem: 'footer',
+                              mix: [
+                                {
+                                  block: 'card',
+                                  elem: 'footer',
+                                  elemMods: {
+                                    'space-a': 'm'
+                                  }
+                                }
+                              ],
                               content: [
                                 {
                                   block: 'text',
-                                  elem: 'word',
-                                  elemMods: { width: 'm' }
+                                  mods: { size: 'm', view: 'primary' },
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      elem: 'word',
+                                      elemMods: { width: 'l' }
+                                    }
+                                  ]
+                                },
+                                {
+                                  block: 'text',
+                                  mods: { size: 's', view: 'primary' },
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      elem: 'word',
+                                      elemMods: { width: 'm' }
+                                    }
+                                  ]
                                 }
                               ]
                             }
                           ]
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  block: 'grid',
-                  elem: 'fraction',
-                  elemMods: { 'm-col': '3' },
-                  content: [
+                    },
                     {
-                      block: 'product',
-                      mix: [
-                        {
-                          block: 'card',
-                          mods: {
-                            view: 'default',
-                            border: 'all'
-                          }
-                        }
-                      ],
+                      block: 'grid',
+                      elem: 'fraction',
+                      elemMods: { 'm-col': '3' },
                       content: [
                         {
                           block: 'product',
-                          elem: 'content',
                           mix: [
                             {
                               block: 'card',
+                              mods: {
+                                view: 'default',
+                                border: 'all'
+                              }
+                            }
+                          ],
+                          content: [
+                            {
+                              block: 'product',
                               elem: 'content',
-                              elemMods: {
-                                'space-a': 'm'
-                              }
-                            }
-                          ],
-                          content: [
-                            {
-                              block: 'image'
-                            }
-                          ]
-                        },
-                        {
-                          block: 'product',
-                          elem: 'footer',
-                          mix: [
-                            {
-                              block: 'card',
-                              elem: 'footer',
-                              elemMods: {
-                                'space-a': 'm'
-                              }
-                            }
-                          ],
-                          content: [
-                            {
-                              block: 'text',
-                              mods: { size: 'm', view: 'primary' },
+                              mix: [
+                                {
+                                  block: 'card',
+                                  elem: 'content',
+                                  elemMods: {
+                                    'space-a': 'm'
+                                  }
+                                }
+                              ],
                               content: [
                                 {
-                                  block: 'text',
-                                  elem: 'word',
-                                  elemMods: { width: 'l' }
+                                  block: 'image'
                                 }
                               ]
                             },
                             {
-                              block: 'text',
-                              mods: { size: 's', view: 'primary' },
+                              block: 'product',
+                              elem: 'footer',
+                              mix: [
+                                {
+                                  block: 'card',
+                                  elem: 'footer',
+                                  elemMods: {
+                                    'space-a': 'm'
+                                  }
+                                }
+                              ],
                               content: [
                                 {
                                   block: 'text',
-                                  elem: 'word',
-                                  elemMods: { width: 'm' }
+                                  mods: { size: 'm', view: 'primary' },
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      elem: 'word',
+                                      elemMods: { width: 'l' }
+                                    }
+                                  ]
+                                },
+                                {
+                                  block: 'text',
+                                  mods: { size: 's', view: 'primary' },
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      elem: 'word',
+                                      elemMods: { width: 'm' }
+                                    }
+                                  ]
                                 }
                               ]
                             }
                           ]
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  block: 'grid',
-                  elem: 'fraction',
-                  elemMods: { 'm-col': '3' },
-                  content: [
+                    },
                     {
-                      block: 'product',
-                      mix: [
-                        {
-                          block: 'card',
-                          mods: {
-                            view: 'default',
-                            border: 'all'
-                          }
-                        }
-                      ],
+                      block: 'grid',
+                      elem: 'fraction',
+                      elemMods: { 'm-col': '3' },
                       content: [
                         {
                           block: 'product',
-                          elem: 'content',
                           mix: [
                             {
                               block: 'card',
+                              mods: {
+                                view: 'default',
+                                border: 'all'
+                              }
+                            }
+                          ],
+                          content: [
+                            {
+                              block: 'product',
                               elem: 'content',
-                              elemMods: {
-                                'space-a': 'm'
-                              }
-                            }
-                          ],
-                          content: [
-                            {
-                              block: 'image'
-                            }
-                          ]
-                        },
-                        {
-                          block: 'product',
-                          elem: 'footer',
-                          mix: [
-                            {
-                              block: 'card',
-                              elem: 'footer',
-                              elemMods: {
-                                'space-a': 'm'
-                              }
-                            }
-                          ],
-                          content: [
-                            {
-                              block: 'text',
-                              mods: { size: 'm', view: 'primary' },
+                              mix: [
+                                {
+                                  block: 'card',
+                                  elem: 'content',
+                                  elemMods: {
+                                    'space-a': 'm'
+                                  }
+                                }
+                              ],
                               content: [
                                 {
-                                  block: 'text',
-                                  elem: 'word',
-                                  elemMods: { width: 'l' }
+                                  block: 'image'
                                 }
                               ]
                             },
                             {
-                              block: 'text',
-                              mods: { size: 's', view: 'primary' },
+                              block: 'product',
+                              elem: 'footer',
+                              mix: [
+                                {
+                                  block: 'card',
+                                  elem: 'footer',
+                                  elemMods: {
+                                    'space-a': 'm'
+                                  }
+                                }
+                              ],
                               content: [
                                 {
                                   block: 'text',
-                                  elem: 'word',
-                                  elemMods: { width: 'm' }
+                                  mods: { size: 'm', view: 'primary' },
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      elem: 'word',
+                                      elemMods: { width: 'l' }
+                                    }
+                                  ]
+                                },
+                                {
+                                  block: 'text',
+                                  mods: { size: 's', view: 'primary' },
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      elem: 'word',
+                                      elemMods: { width: 'm' }
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -6126,6 +6329,11 @@ const product = bemEngine({
         },
         {
           block: 'footer',
+          mix: [
+            {
+              block: 'theme'
+            }
+          ],
           content: [
             {
               block: 'footer',
@@ -6181,7 +6389,7 @@ const product = bemEngine({
 
 const collect = bemEngine({
   block: 'theme',
-  mods: { color: 'project-default', size: 'default', space: 'default', gap: 'small' },
+  mods: { color: 'project-default', size: 'default', space: 'default' },
   content: [
     {
       block: 'layout',
@@ -7696,7 +7904,7 @@ const collect = bemEngine({
 
 const content = bemEngine({
   block: 'theme',
-  mods: { color: 'project-default', size: 'default', space: 'default', gap: 'small' },
+  mods: { color: 'project-default', size: 'default', space: 'default' },
   content: [
     {
       block: 'layout',
