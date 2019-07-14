@@ -15,7 +15,7 @@ module.exports = merge(common, {
         enforce: 'pre',
         exclude: /node_modules/,
         loader: 'eslint-loader',
-        option: {
+        options: {
           emitError: true
         }
       },
