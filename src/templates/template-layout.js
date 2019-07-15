@@ -1,4 +1,4 @@
-import '../style.css';
+import css from '../style.css';
 import bemEngine from '../template-engine';
 
 const blocks = bemEngine({

@@ -6,11 +6,7 @@ const Webpack = require('webpack');
 module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
-  output: {
-    chunkFilename: 'js/[name].chunk.js'
-  },
   devServer: {
-    contentBase: path.join(__dirname, 'build'),
     inline: true
   },
   plugins: [
@@ -32,7 +28,17 @@ module.exports = merge(common, {
       },
       {
         test: /\.css$/,
-        use: ['css-loader?sourceMap=true', 'postcss-loader']
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              sourceMap: true
+            }
+          },
+          'postcss-loader'
+        ]
       }
     ]
   }

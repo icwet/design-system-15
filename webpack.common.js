@@ -10,6 +10,10 @@ module.exports = {
     'template-layout': path.resolve(__dirname, './src/templates/template-layout.js'),
     script: path.resolve(__dirname, './src/script.js')
   },
+  output: {
+    filename: '[name].js',
+    path: path.join(__dirname, 'build')
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([{ from: path.resolve(__dirname, './res'), to: 'res' }]),
@@ -37,6 +41,11 @@ module.exports = {
       files: 'src/**/*.css'
     })
   ],
+  resolve: {
+    alias: {
+      '~': path.resolve(__dirname, '../src')
+    }
+  },
   module: {
     rules: [
       {
@@ -60,9 +69,5 @@ module.exports = {
         }
       }
     ]
-  },
-  output: {
-    filename: '[name].js',
-    path: path.join(__dirname, 'build')
   }
 };
