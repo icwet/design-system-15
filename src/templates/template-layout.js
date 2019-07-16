@@ -7319,6 +7319,272 @@ const collect = bemEngine({
                                   ]
                                 }
                               ]
+                            },
+                            {
+                              block: 'articles',
+                              elem: 'unit',
+                              mix: [
+                                {
+                                  block: 'icon-plus',
+                                  mods: {
+                                    'vertical-align': 'center'
+                                  }
+                                }
+                              ],
+                              content: [
+                                {
+                                  block: 'articles',
+                                  elem: 'pic',
+                                  mix: [
+                                    {
+                                      block: 'theme',
+                                      mods: {
+                                        color: 'project-inverse'
+                                      }
+                                    },
+                                    {
+                                      block: 'icon-plus',
+                                      elem: 'icon',
+                                      elemMods: {
+                                        'indent-r': 'm'
+                                      }
+                                    }
+                                  ],
+                                  content: [
+                                    {
+                                      block: 'image'
+                                    }
+                                  ]
+                                },
+                                {
+                                  block: 'articles',
+                                  elem: 'content',
+                                  mix: [
+                                    {
+                                      block: 'icon-plus',
+                                      elem: 'block'
+                                    }
+                                  ],
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: {
+                                        view: 'secondary',
+                                        size: 'l'
+                                      },
+                                      content: [
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 'm'
+                                          }
+                                        },
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 's'
+                                          }
+                                        },
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 's'
+                                          }
+                                        },
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 'm'
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      block: 'text',
+                                      mods: {
+                                        view: 'primary',
+                                        size: 'l'
+                                      },
+                                      content: [
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 'l'
+                                          }
+                                        },
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 'm'
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      block: 'text',
+                                      mods: {
+                                        view: 'link',
+                                        size: 'm'
+                                      },
+                                      content: [
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 'm'
+                                          }
+                                        },
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 's'
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              block: 'articles',
+                              elem: 'unit',
+                              mix: [
+                                {
+                                  block: 'icon-plus',
+                                  mods: {
+                                    'vertical-align': 'center'
+                                  }
+                                }
+                              ],
+                              content: [
+                                {
+                                  block: 'articles',
+                                  elem: 'pic',
+                                  mix: [
+                                    {
+                                      block: 'theme',
+                                      mods: {
+                                        color: 'project-inverse'
+                                      }
+                                    },
+                                    {
+                                      block: 'icon-plus',
+                                      elem: 'icon',
+                                      elemMods: {
+                                        'indent-r': 'm'
+                                      }
+                                    }
+                                  ],
+                                  content: [
+                                    {
+                                      block: 'image'
+                                    }
+                                  ]
+                                },
+                                {
+                                  block: 'articles',
+                                  elem: 'content',
+                                  mix: [
+                                    {
+                                      block: 'icon-plus',
+                                      elem: 'block'
+                                    }
+                                  ],
+                                  content: [
+                                    {
+                                      block: 'text',
+                                      mods: {
+                                        view: 'secondary',
+                                        size: 'l'
+                                      },
+                                      content: [
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 'm'
+                                          }
+                                        },
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 's'
+                                          }
+                                        },
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 's'
+                                          }
+                                        },
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 'm'
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      block: 'text',
+                                      mods: {
+                                        view: 'primary',
+                                        size: 'l'
+                                      },
+                                      content: [
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 'l'
+                                          }
+                                        },
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 'm'
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      block: 'text',
+                                      mods: {
+                                        view: 'link',
+                                        size: 'm'
+                                      },
+                                      content: [
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 'm'
+                                          }
+                                        },
+                                        {
+                                          block: 'text',
+                                          elem: 'word',
+                                          elemMods: {
+                                            width: 's'
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
                             }
                           ]
                         }
@@ -8469,8 +8735,7 @@ const content = bemEngine({
           elem: 'container',
           elemMods: {
             size: 'm',
-            align: 'center',
-            'indent-b': 'xxxxl'
+            align: 'center'
           },
           content: [
             {
@@ -8896,9 +9161,8 @@ const content = bemEngine({
           block: 'layout',
           elem: 'container',
           elemMods: {
-            size: 'm',
-            align: 'center',
-            'indent-b': 'xxxxl'
+            size: 's',
+            align: 'center'
           },
           content: [
             {
@@ -8928,8 +9192,456 @@ const content = bemEngine({
             {
               block: 'text',
               mods: {
+                size: 'l',
+                view: 'primary',
+                type: 'p'
+              },
+              content: [
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 's'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                }
+              ]
+            },
+            {
+              block: 'text',
+              mods: {
                 size: 'xxl',
-                view: 'primary'
+                view: 'primary',
+                type: 'h3'
+              },
+              content: [
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'm'
+                  }
+                },
+                {
+                  block: 'text',
+                  elem: 'word',
+                  elemMods: {
+                    width: 'l'
+                  }
+                }
+              ]
+            },
+            {
+              block: 'text',
+              mods: {
+                size: 'l',
+                view: 'primary',
+                type: 'p'
               },
               content: [
                 {
@@ -9350,456 +10062,50 @@ const content = bemEngine({
           ]
         },
         {
-          block: 'layout',
-          elem: 'container',
-          elemMods: {
-            size: 'm',
-            align: 'center',
-            'indent-b': 'xxxxl'
-          },
+          block: 'footer',
           content: [
             {
-              block: 'text',
-              mods: {
-                size: 'xxl',
-                view: 'primary'
-              },
+              block: 'footer',
+              elem: 'content',
               content: [
                 {
                   block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'm'
-                  }
+                  mods: {
+                    view: 'primary',
+                    size: 'l'
+                  },
+                  content: [
+                    {
+                      block: 'text',
+                      elem: 'word',
+                      elemMods: {
+                        width: 'l'
+                      }
+                    },
+                    {
+                      block: 'text',
+                      elem: 'word',
+                      elemMods: {
+                        width: 's'
+                      }
+                    }
+                  ]
                 },
                 {
                   block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                }
-              ]
-            },
-            {
-              block: 'text',
-              mods: {
-                size: 'xxl',
-                view: 'primary'
-              },
-              content: [
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
-                },
-                {
-                  block: 'text',
-                  elem: 'word',
-                  elemMods: {
-                    width: 'l'
-                  }
+                  mods: {
+                    view: 'primary',
+                    size: 'l'
+                  },
+                  content: [
+                    {
+                      block: 'text',
+                      elem: 'word',
+                      elemMods: {
+                        width: 'l'
+                      }
+                    }
+                  ]
                 }
               ]
             }
