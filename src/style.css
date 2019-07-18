@@ -758,6 +758,7 @@ body {
 
 .button {
   background: var(--background-accent);
+  width: 200px;
 
   &_size_s {
     height: 24px;
@@ -776,7 +777,7 @@ body {
   }
 
   &_width_full {
-    width: 200px;
+    width: 100%;
   }
 }
 
@@ -1003,16 +1004,19 @@ body {
 .offer {
   min-height: 408px;
 }
+.offer__name {
+  margin-bottom: var(--gap-xs);
+}
+.offer__sale {
+  margin-bottom: var(--gap-s);
+}
 
 .subscription {
   min-height: 408px;
   grid-auto-rows: min-content;
 }
-.subscription__control {
-  margin-bottom: var(--gap-s);
-}
 .subscription__advantages {
-  padding: var(--gap-xl);
+  padding: 0 var(--gap-xl);
 }
 
 .event {

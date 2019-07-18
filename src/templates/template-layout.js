@@ -7631,7 +7631,22 @@ const collect = bemEngine({
                                 name: 'megafon',
                                 size: 'm'
                               }
-                            },
+                            }
+                          ]
+                        },
+                        {
+                          block: 'offer',
+                          elem: 'footer',
+                          mix: [
+                            {
+                              block: 'card',
+                              elem: 'footer',
+                              elemMods: {
+                                'space-a': 'xl'
+                              }
+                            }
+                          ],
+                          content: [
                             {
                               block: 'offer',
                               elem: 'name',
@@ -7675,22 +7690,7 @@ const collect = bemEngine({
                                   ]
                                 }
                               ]
-                            }
-                          ]
-                        },
-                        {
-                          block: 'offer',
-                          elem: 'footer',
-                          mix: [
-                            {
-                              block: 'card',
-                              elem: 'footer',
-                              elemMods: {
-                                'space-a': 'xl'
-                              }
-                            }
-                          ],
-                          content: [
+                            },
                             {
                               block: 'text',
                               mods: {
