@@ -3139,8 +3139,7 @@ const index = bemEngine({
                             {
                               block: 'button',
                               mods: {
-                                size: 'l',
-                                width: 'full'
+                                size: 'l'
                               }
                             }
                           ]
@@ -3280,7 +3279,7 @@ const index = bemEngine({
                           content: [
                             {
                               block: 'button',
-                              mods: { size: 'l', width: 'full' }
+                              mods: { size: 'l' }
                             }
                           ]
                         }
@@ -3707,8 +3706,7 @@ const index = bemEngine({
           elem: 'container',
           elemMods: {
             size: 'm',
-            align: 'center',
-            'indent-b': 'xxl'
+            align: 'center'
           },
           content: [
             {

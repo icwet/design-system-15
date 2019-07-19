@@ -25,7 +25,7 @@ body {
     --text-links: #0070f0;
 
     --current-image: url('../res/img/image-placeholder-inverse.svg') center/80px 65px no-repeat;
-    --current-image-background: var(--text-main);
+    --current-image-background: var(--background-default);
   }
 
   &_color_project-brand {
@@ -38,7 +38,7 @@ body {
     --text-additional: rgba(255, 255, 255, 0.3);
     --text-links: #ffffff;
 
-    --current-image-background: #000;
+    --current-image-background: var(--background-default);
     --current-image: url('../res/img/image-placeholder-primary.svg') center/80px 65px no-repeat;
   }
 
@@ -806,7 +806,7 @@ body {
   width: 100%;
   height: var(--currentImageHeight);
   background: var(--current-image-background) var(--current-image);
-  border: 3px solid var(--text-main);
+  border: 3px solid var(--current-image-border);
 
   min-width: var(--specialWidthVar);
 }
@@ -854,6 +854,12 @@ body {
 .product__footer {
   display: grid;
   gap: var(--gap-s);
+}
+
+.product__content {
+  --current-image-background: #000;
+  --current-image-border: #000;
+  --current-image: url('../res/img/image-placeholder-primary.svg') center/80px 65px no-repeat;
 }
 
 .history {
@@ -914,11 +920,13 @@ body {
 
 .commercial {
   min-height: 430px;
-  border: 3px solid var(--border);
+  border: 3px solid var(--background-default);
 }
 
 .commercial__pic {
+  --background-default: #fff;
   --currentImageHeight: 180px;
+  --current-image-border: #fff;
 }
 .commercial__info {
   display: grid;
@@ -949,10 +957,6 @@ body {
   display: grid;
   gap: var(--gap-m);
   grid-auto-rows: min-content;
-}
-.cover__preview {
-  display: grid;
-  gap: 12px;
 }
 
 .collect {

@@ -2036,7 +2036,7 @@
                                       elemMods: { width: 'l' }
                                     }
                                   },
-                                  { block: 'button', mods: { size: 'l', width: 'full' } }
+                                  { block: 'button', mods: { size: 'l' } }
                                 ]
                               }
                             ]
@@ -2096,7 +2096,7 @@
                                     elemMods: { distribute: 'center', 'space-a': 'xl' }
                                   }
                                 ],
-                                content: [{ block: 'button', mods: { size: 'l', width: 'full' } }]
+                                content: [{ block: 'button', mods: { size: 'l' } }]
                               }
                             ]
                           }
@@ -2342,7 +2342,7 @@
               {
                 block: 'layout',
                 elem: 'container',
-                elemMods: { size: 'm', align: 'center', 'indent-b': 'xxl' },
+                elemMods: { size: 'm', align: 'center' },
                 content: [
                   {
                     block: 'grid',
@@ -4492,7 +4492,16 @@
                                   { block: 'card', elem: 'content', elemMods: { 'space-a': 'xl' } }
                                 ],
                                 content: [
-                                  { block: 'brand-logo', mods: { name: 'megafon', size: 'm' } },
+                                  { block: 'brand-logo', mods: { name: 'megafon', size: 'm' } }
+                                ]
+                              },
+                              {
+                                block: 'offer',
+                                elem: 'footer',
+                                mix: [
+                                  { block: 'card', elem: 'footer', elemMods: { 'space-a': 'xl' } }
+                                ],
+                                content: [
                                   {
                                     block: 'offer',
                                     elem: 'name',
@@ -4518,16 +4527,7 @@
                                         ]
                                       }
                                     ]
-                                  }
-                                ]
-                              },
-                              {
-                                block: 'offer',
-                                elem: 'footer',
-                                mix: [
-                                  { block: 'card', elem: 'footer', elemMods: { 'space-a': 'xl' } }
-                                ],
-                                content: [
+                                  },
                                   {
                                     block: 'text',
                                     mods: { view: 'secondary', size: 'm' },
