@@ -23,9 +23,9 @@ body {
     --text-secondary: rgba(0, 0, 0, 0.6);
     --text-additional: rgba(0, 0, 0, 0.3);
     --text-links: #0070f0;
-
-    --current-image: url('../res/img/image-placeholder-inverse.svg') center/80px 65px no-repeat;
-    --current-image-background: var(--background-default);
+    --current-image: url('../res/img/image-placeholder-primary.svg') center/80px 65px no-repeat;
+    --current-image-background: var(--border);
+    --current-image-border: var(--border);
   }
 
   &_color_project-brand {
@@ -39,7 +39,8 @@ body {
     --text-links: #ffffff;
 
     --current-image-background: var(--background-default);
-    --current-image: url('../res/img/image-placeholder-primary.svg') center/80px 65px no-repeat;
+    --current-image: url('../res/img/image-placeholder-inverse.svg') center/80px 65px no-repeat;
+
   }
 
   &_color_project-inverse {
@@ -52,8 +53,9 @@ body {
     --text-additional: rgba(255, 255, 255, 0.3);
     --text-links: #0070f0;
 
-    --current-image: url('../res/img/image-placeholder-primary.svg') center/80px 65px no-repeat;
-    --current-image-background: var(--background-default);
+    --current-image: url('../res/img/image-placeholder-inverse.svg') center/80px 65px no-repeat;
+    --current-image-background: #fff;
+    --current-image-border: #fff;
   }
 
   &_color_project-warning {
@@ -857,9 +859,9 @@ body {
 }
 
 .product__content {
-  --current-image-background: #000;
+  /*--current-image-background: #fff;
   --current-image-border: #000;
-  --current-image: url('../res/img/image-placeholder-primary.svg') center/80px 65px no-repeat;
+  --current-image: url('../res/img/image-placeholder-primary.svg') center/80px 65px no-repeat;*/
 }
 
 .history {
@@ -924,9 +926,10 @@ body {
 }
 
 .commercial__pic {
-  --background-default: #fff;
+  --current-image: url('../res/img/image-placeholder-primary.svg') center/80px 65px no-repeat;
   --currentImageHeight: 180px;
   --current-image-border: #fff;
+
 }
 .commercial__info {
   display: grid;
@@ -955,6 +958,7 @@ body {
 }
 .cover__info {
   --current-image-border: #fff;
+  --current-image: url('../res/img/image-placeholder-primary.svg') center/80px 65px no-repeat;
 
   display: grid;
   gap: var(--gap-m);

@@ -6394,6 +6394,11 @@ const collect = bemEngine({
       content: [
         {
           block: 'header',
+          mix: [
+            {
+              block: 'theme'
+            }
+          ],
           content: [
             {
               block: 'header',
@@ -8111,6 +8116,11 @@ const collect = bemEngine({
         },
         {
           block: 'footer',
+          mix: [
+            {
+              block: 'theme'
+            }
+          ],
           content: [
             {
               block: 'footer',

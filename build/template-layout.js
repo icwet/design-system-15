@@ -3883,6 +3883,7 @@
             content: [
               {
                 block: 'header',
+                mix: [{ block: 'theme' }],
                 content: [
                   {
                     block: 'header',
@@ -4708,6 +4709,7 @@
               },
               {
                 block: 'footer',
+                mix: [{ block: 'theme' }],
                 content: [
                   {
                     block: 'footer',
