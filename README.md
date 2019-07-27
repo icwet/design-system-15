@@ -58,6 +58,7 @@
 ├── package.json
 ├── postcss.config.js
 ├── README.md
+├── wallaby.js
 ├── webpack.common.js - основная конфигурация сборщика
 ├── webpack.dev.js - конфигурация для разработки
 ├── webpack.prod.js - для полной сборки проекта
