@@ -1,4 +1,4 @@
-![](https://downloader.disk.yandex.ru/preview/49ef263845cd358605a9830fdac8484bf3f767ab9567e998afe54e87ee1acefd/5d38f560/qaj7vzoHYTMVeqyiFpTy30rUADIVXaFZF116FqBHnZz3RsSk97wSvqZPMrHC-NCZkRaBU0wNuWcA5r68aVsrSQ%3D%3D?uid=0&filename=upload.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=1920x942)
+![bem](./res/img/yandex-bem.jpg)
 # Дизайн система 
 
 В этом репозитории находится мое решение тестового задания «[Реализуйте дизайн-систему](https://github.com/yndx-shri-reviewer/task-1#readme "Реализуйте дизайн-систему")» для 15-й Школы разработки интерфейсов (осень 2019, Москва).
@@ -9,20 +9,26 @@
 - [x] Yarn
 - [x] Webpack
 - [x] PostCSS
+- [x] Autoprefixer
 - [x] Mocha
 - [x] Karma
+- [x] Chai
 - [x] Eslint
 - [x] Prettier
 - [x] Stylelint
 - [x] Babel
+- [x] Browserlist (default)
+
 ## Команды CLI
-**Перед запуском необходимо установить зависимости проекта.**
+**Для использования команды `yarn` необходимо установить [Yarn](https://yarnpkg.com/)**
 
 `yarn install` - установка зависимостей.
 
 `yarn dev` - запустить проект локально. Адрес локального сервера `http://localhost:8080/[pagename]`
 
 `yarn build` - сборка проекта.
+
+`yarn test` - запуск тестов
 
 ## Файловая структура
 ```
@@ -51,6 +57,7 @@
 ├── karma.conf.js - конфигурация тест раннера
 ├── package.json
 ├── postcss.config.js
+├── README.md
 ├── webpack.common.js - основная конфигурация сборщика
 ├── webpack.dev.js - конфигурация для разработки
 ├── webpack.prod.js - для полной сборки проекта
@@ -59,21 +66,26 @@
 ## Описание
 
 ### Пакетный менеджер
-
 В проекте используется пакетный менеджер Yarn из за его надежности и скорости установки пакетов.
+
 ### Сборщик
-
 Собирается проект при помощи Webpack из за его популярности, большого количества дополнительных инструментов (загрузчиков) и обширной документации.
+
 ### Линтеры
+За качеством кода следим при помощи stylelint для CSS, eslint и prettier для JavaScript. Вместе с этим [.editorconfig](https://editorconfig.org/) контролирует кодировку файлов и формат отступов.
 
-За качеством кода следим при помощи stylelint для CSS, eslint и prettier для JavaScript. Вместе с этим .editorconfig контролирует кодировку файлов и формат отступов.
 ### Стили
-
 Основа стилевого оформления блоков дизайн системы базируется на методологии БЭМ и кастомных свойств CSS. Для упрощения написания стилей используется PostCSS и плагины
 - autoprefixer - для автоматической расстановки префиксов в слабо поддерживаемых браузерами свойствах
 - postcss-nested - для возможности использовать `&` при написании модификаторов блоков/элементов.
 
 ### Шаблонизатор
 Шаблонизатор это переписанная в синтаксисе ES6 версия [этого](https://github.com/floatdrop/bemjson-to-html "этого") репозитория. Используются только самые необходимые функции. Шаблонизация происходит на клиенте.
-<br>**Принцип работы.**<br>
+**Принцип работы.**
 В импортируемую функцию из файла `template-engine.js` передается объект в синтаксисе [BEMJSON](https://ru.bem.info/technologies/classic/bemjson/ "BEMJSON"). В файле `src/templates/template-layout.js` пример работы функции и все необходимые демонстрационные страницы. `test/test.js` тесты основных функций шаблонизатора.
+
+### Тесты
+Для тестирования используется тест фреймворк mocha в связке с karma, chai и babel для ES6 модулей.
+
+## Лицензия
+MIT

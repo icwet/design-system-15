@@ -52,12 +52,16 @@ export default function(obj) {
     if (obj === undefined || obj === false || obj === null) {
       return '';
     }
+    if (typeof obj !== 'object') {
+      return obj;
+    }
     if (obj.block) {
       ctxBlock = obj.block;
     }
     if (Array.isArray(obj)) {
       return concatArray(obj, ctxBlock);
     }
+
     const DEFAULT_TAG = 'div';
     obj.tag = obj.tag || DEFAULT_TAG;
 

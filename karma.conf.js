@@ -1,5 +1,6 @@
 // Karma configuration
 // Generated on Thu Jul 25 2019 21:30:51 GMT+0300 (GMT+03:00)
+const webpackConf = require('./webpack.dev');
 
 module.exports = function(config) {
   config.set({
@@ -11,7 +12,7 @@ module.exports = function(config) {
     frameworks: ['mocha'],
 
     // list of files / patterns to load in the browser
-    files: ['test/*.js', 'src/*.js'],
+    files: [{ pattern: 'test/*.js', watched: false }, { pattern: 'src/*.js', watched: false }],
 
     // list of files / patterns to exclude
     exclude: [],
@@ -26,7 +27,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage'],
 
     // web server port
     port: 9876,
@@ -52,6 +53,6 @@ module.exports = function(config) {
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity,
-    webpack: {}
+    webpack: webpackConf
   });
 };
