@@ -10,12 +10,12 @@ export default function(obj) {
     }
 
     let resultClass = obj.block || ctxBlock ? bemClass(obj) : '';
+    if (resultClass === '') {
+      return '';
+    }
 
     if (typeof obj !== 'object') {
       return obj;
-    }
-    if (obj === undefined || obj === null || obj === false) {
-      return '';
     }
     return ' class="' + resultClass + '"';
   }
@@ -60,6 +60,10 @@ export default function(obj) {
     }
     if (Array.isArray(obj)) {
       return concatArray(obj, ctxBlock);
+    }
+
+    if (obj.tag === false) {
+      return toHTML(obj.content || '', ctxBlock);
     }
 
     const DEFAULT_TAG = 'div';

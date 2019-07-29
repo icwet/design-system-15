@@ -10,6 +10,9 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    semi: 2
-  }
+    semi: 2,
+    'prettier/prettier': ['error']
+  },
+  extends: ['airbnb-base', 'prettier'],
+  plugins: ['prettier']
 };
