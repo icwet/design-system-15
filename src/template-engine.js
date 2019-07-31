@@ -22,6 +22,9 @@ export default function(obj) {
 
   function bemClass(obj, argBlock) {
     const block = obj.block || argBlock;
+    if (!block) {
+      return '';
+    }
     const base = block + (obj.elem ? '__' + obj.elem : '');
     const mods = obj.elem ? obj.elemMods : obj.mods;
 
@@ -29,7 +32,12 @@ export default function(obj) {
 
     if (mods) {
       for (let i in mods) {
-        output += ' ' + base + '_' + i + (mods[i] === true ? '' : '_' + mods[i]);
+        if (typeof mods[i] === 'number') {
+          mods[i] += '';
+        }
+        if (mods[i]) {
+          output += ' ' + base + '_' + i + (mods[i] === true ? '' : '_' + mods[i]);
+        }
       }
     }
 
@@ -61,7 +69,9 @@ export default function(obj) {
     if (Array.isArray(obj)) {
       return concatArray(obj, ctxBlock);
     }
-
+    if (!obj) {
+      return obj + '';
+    }
     if (obj.tag === false) {
       return toHTML(obj.content || '', ctxBlock);
     }

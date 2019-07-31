@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import css from '../style.css';
 import bemEngine from '../template-engine';
 
