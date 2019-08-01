@@ -17,7 +17,7 @@
 - [x] Prettier
 - [x] Stylelint
 - [x] Babel
-- [x] Browserlist (default)
+- [x] Browserslist (default)
 
 ## Команды CLI
 **Для использования команды `yarn` необходимо установить [Yarn](https://yarnpkg.com/)**
